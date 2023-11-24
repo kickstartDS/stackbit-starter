@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { ComponentType } from "react";
 import { Annotated } from "./Annotated";
 import { ContentObject, GlobalProps } from "@/types";
-import { Section } from "@kickstartds/ds-agency/section";
+import { Section } from "@kickstartds/base/lib/section";
 
 type DynamicComponentProps = ContentObject & {
   global?: GlobalProps;
