@@ -7,24 +7,23 @@ import { Section as DsaSection } from "@kickstartds/ds-agency/section";
 import { SectionContext } from "@kickstartds/base/lib/section";
 
 import "@/helpers/client";
-import { ComponentProps, FC, PropsWithChildren } from "react";
+import { ComponentProps, FC, PropsWithChildren, useContext } from "react";
 import { DynamicComponent } from "@/components";
 
-const Section: React.FC<React.PropsWithChildren> = (
-  props: ComponentProps<typeof DsaSection>
-) => {
-  const { components, ...rest } = props;
-  console.log("components", components, rest);
-  return (
-    <DsaSection {...rest}>
-      {components?.map((component: any, index: number) => (
-        <DynamicComponent key={index} {...component} />
-      ))}
-    </DsaSection>
-  );
-};
-
 const SectionProvider: FC<PropsWithChildren<any>> = (props) => {
+  const PreviousSection = useContext(SectionContext) as typeof DsaSection;
+  const Section: React.FC<
+    React.PropsWithChildren<ComponentProps<typeof DsaSection>>
+  > = (props) => {
+    const { components, ...rest } = props;
+    return (
+      <PreviousSection {...rest}>
+        {components?.map((component: any, index: number) => (
+          <DynamicComponent key={index} {...component} />
+        ))}
+      </PreviousSection>
+    );
+  };
   return <SectionContext.Provider value={Section} {...props} />;
 };
 
@@ -33,7 +32,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log("children", children);
   return (
     <html>
       <body>

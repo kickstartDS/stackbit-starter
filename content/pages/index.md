@@ -6,12 +6,14 @@ sections:
     width: default
     gutter: default
     mode: default
-    align: left
     style: default
     spaceBefore: default
     spaceAfter: default
-    headline: Another headline
-    sub: Subheadline
+    headline:
+      text: Another headline
+      sub: Subheadline
+    content:
+      align: left
     components:
       - type: cta
         align: left
