@@ -1,0 +1,2760 @@
+{
+  "components": [
+    {
+      "name": "blog_aside",
+      "label": "Blog Aside",
+      "description": "Meta info for a singular blog entry",
+      "type": "object",
+      "fields": [
+        {
+          "name": "author",
+          "label": "Author",
+          "description": "The author of the blog post",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "The name of the author",
+              "required": false
+            },
+            {
+              "name": "byline",
+              "type": "string",
+              "description": "The byline of the author",
+              "required": false
+            },
+            {
+              "name": "image",
+              "type": "string",
+              "description": "The image URL of the author",
+              "required": false
+            },
+            {
+              "name": "twitter",
+              "type": "string",
+              "description": "The Twitter name of the author",
+              "required": false
+            },
+            {
+              "name": "email",
+              "type": "string",
+              "description": "The Email of the author",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "socialSharing",
+          "label": "SocialSharing",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "The icon name for the social link",
+                "required": false
+              },
+              {
+                "name": "href",
+                "type": "string",
+                "description": "The href for the social link",
+                "required": false
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "description": "The title for the social link",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "readingTime",
+          "type": "string",
+          "description": "The reading time for the blog post",
+          "required": false
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": "The date when the blog post was published",
+          "required": true
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "blog-aside"
+        }
+      ]
+    },
+    {
+      "name": "blog_head",
+      "label": "Blog Head",
+      "description": "Intro portion of a singular blog entry",
+      "type": "object",
+      "fields": [
+        {
+          "name": "date",
+          "type": "string",
+          "description": "The date when the blog post was published",
+          "required": false
+        },
+        {
+          "name": "tags",
+          "type": "list",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "The headline of the blog post",
+          "required": true
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "description": "The source of the cover image for the blog post",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "blog-head"
+        }
+      ]
+    },
+    {
+      "name": "blog_teaser",
+      "label": "Blog Teaser",
+      "description": "Display a blog teaser with date, tags, headline, teaser text and author",
+      "type": "object",
+      "fields": [
+        {
+          "name": "date",
+          "type": "string",
+          "description": "The date of the blog post",
+          "required": false
+        },
+        {
+          "name": "tags",
+          "type": "list",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "The headline of the blog post",
+          "required": true
+        },
+        {
+          "name": "teaserText",
+          "type": "string",
+          "description": "The teaser text of the blog post",
+          "required": true
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "description": "The preview image for the blog post",
+          "required": false
+        },
+        {
+          "name": "link",
+          "label": "Link",
+          "description": "URL and label for the blog post linked",
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "type": "string",
+              "description": "The blog entry URL to link",
+              "required": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "default": "Read more",
+              "description": "The label to use for the link",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "readingTime",
+          "type": "string",
+          "description": "Time to read for the blog post",
+          "required": false
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "description": "The author of the blog post",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "The name of the author",
+              "required": false
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "description": "The title of the author",
+              "required": false
+            },
+            {
+              "name": "image",
+              "type": "string",
+              "description": "The image URL of the author",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "blog-teaser"
+        }
+      ]
+    },
+    {
+      "name": "cta_paid",
+      "label": "Cta Paid",
+      "description": "Cta Paid",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the module element",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "fullWidth",
+          "type": "string",
+          "description": "Set the width of the content to the full width of the element",
+          "required": false
+        },
+        {
+          "name": "ctas",
+          "label": "Ctas",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Label for the Call to action",
+                "required": false
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target for the Call to action",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "backgroundColor",
+          "type": "string",
+          "description": "Background color for the whole element",
+          "required": false
+        },
+        {
+          "name": "backgroundImage",
+          "type": "string",
+          "description": "Background image for the whole element",
+          "required": false
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "description": "Image displayed alongside the text content",
+          "type": "object",
+          "fields": [
+            {
+              "name": "source",
+              "type": "string",
+              "description": "Image source to use",
+              "required": false
+            },
+            {
+              "name": "ratio",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "4:3",
+                  "value": "VALUE_4_3"
+                },
+                {
+                  "label": "3:2",
+                  "value": "VALUE_3_2"
+                },
+                {
+                  "label": "16:9",
+                  "value": "VALUE_16_9"
+                },
+                {
+                  "label": "1:1",
+                  "value": "VALUE_1_1"
+                },
+                {
+                  "label": "none",
+                  "value": "none"
+                }
+              ],
+              "default": "none",
+              "description": "Select an aspect ratio to use for cropping and displaying the image",
+              "required": false
+            },
+            {
+              "name": "vAlign",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "center",
+                  "value": "center"
+                },
+                {
+                  "label": "top",
+                  "value": "top"
+                },
+                {
+                  "label": "top-edge",
+                  "value": "top_edge"
+                },
+                {
+                  "label": "bottom",
+                  "value": "bottom"
+                },
+                {
+                  "label": "bottom-edge",
+                  "value": "bottom_edge"
+                }
+              ],
+              "default": "center",
+              "description": "Select a vertical alignment for the image",
+              "required": false
+            },
+            {
+              "name": "hAlign",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "center",
+                  "value": "center"
+                },
+                {
+                  "label": "left",
+                  "value": "left"
+                },
+                {
+                  "label": "left-edge",
+                  "value": "left_edge"
+                },
+                {
+                  "label": "right",
+                  "value": "right"
+                },
+                {
+                  "label": "right-edge",
+                  "value": "right_edge"
+                }
+              ],
+              "default": "center",
+              "description": "Select a horizontal alignment for the image",
+              "required": false
+            },
+            {
+              "name": "order",
+              "label": "Order",
+              "description": "Choose what comes first on mobile and desktop: image or text",
+              "type": "object",
+              "fields": [
+                {
+                  "name": "mobileImageLast",
+                  "type": "string",
+                  "description": "Switch to displaying the image after the text on mobile",
+                  "required": false
+                },
+                {
+                  "name": "desktopImageLast",
+                  "type": "string",
+                  "default": true,
+                  "description": "Switch to displaying the image after the text on desktop",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Image description",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "cta-paid"
+        }
+      ]
+    },
+    {
+      "name": "faq",
+      "label": "Faq",
+      "description": "Component used to display a FAQ section",
+      "type": "object",
+      "fields": [
+        {
+          "name": "questions",
+          "label": "Questions",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "question",
+                "type": "string",
+                "description": "The question",
+                "required": false
+              },
+              {
+                "name": "answer",
+                "type": "string",
+                "description": "The answer to the question",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "faq"
+        }
+      ]
+    },
+    {
+      "name": "features",
+      "label": "Features",
+      "description": "Component used to display a set of features",
+      "type": "object",
+      "fields": [
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "largeTiles",
+              "value": "largeTiles"
+            },
+            {
+              "label": "smallTiles",
+              "value": "smallTiles"
+            },
+            {
+              "label": "list",
+              "value": "list"
+            }
+          ],
+          "default": "largeTiles",
+          "description": "The layout variant to use for the features",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "enum",
+          "options": [
+            {
+              "label": "intext",
+              "value": "intext"
+            },
+            {
+              "label": "stack",
+              "value": "stack"
+            },
+            {
+              "label": "centered",
+              "value": "centered"
+            },
+            {
+              "label": "besideLarge",
+              "value": "besideLarge"
+            },
+            {
+              "label": "besideSmall",
+              "value": "besideSmall"
+            }
+          ],
+          "default": "besideLarge",
+          "required": false
+        },
+        {
+          "name": "ctas",
+          "label": "Ctas",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "toggle",
+              "type": "string",
+              "default": "false",
+              "description": "Activate/disable the CTA",
+              "required": false
+            },
+            {
+              "name": "style",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "button",
+                  "value": "button"
+                },
+                {
+                  "label": "link",
+                  "value": "link"
+                },
+                {
+                  "label": "intext",
+                  "value": "intext"
+                }
+              ],
+              "default": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "features",
+          "label": "Features",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "The icon for the feature",
+                "required": false
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "description": "The title of the feature",
+                "required": false
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "description": "The description of the feature",
+                "required": false
+              },
+              {
+                "name": "cta",
+                "label": "Cta",
+                "description": "The call to action",
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "link",
+                    "type": "string",
+                    "default": "#",
+                    "description": "The CTA link",
+                    "required": false
+                  },
+                  {
+                    "name": "label",
+                    "type": "string",
+                    "description": "The text label displayed on the link",
+                    "required": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "features"
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "label": "Footer",
+      "description": "Footer",
+      "type": "object",
+      "fields": [
+        {
+          "name": "logo",
+          "label": "Logo",
+          "description": "Base component to display a picture",
+          "type": "object",
+          "fields": [
+            {
+              "name": "src",
+              "type": "string",
+              "description": "Picture source",
+              "required": false
+            },
+            {
+              "name": "srcSet",
+              "type": "string",
+              "description": "Use a srcSet to display picture",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Alt text to display for picture",
+              "required": false
+            },
+            {
+              "name": "width",
+              "type": "string",
+              "description": "Width of the picture",
+              "required": false
+            },
+            {
+              "name": "height",
+              "type": "string",
+              "description": "Height of the picture",
+              "required": false
+            },
+            {
+              "name": "className",
+              "type": "string",
+              "description": "Add additional css classes that should be applied to the button",
+              "required": false
+            },
+            {
+              "name": "component",
+              "type": "string",
+              "description": "Optional custom component identifier",
+              "required": false
+            },
+            {
+              "name": "id",
+              "type": "string",
+              "description": "Add id attribute to the image",
+              "required": false
+            },
+            {
+              "name": "itemProp",
+              "type": "string",
+              "description": "Define an itemprop attribute for the picture",
+              "required": false
+            },
+            {
+              "name": "style",
+              "type": "string",
+              "description": "Define a style attribute for the picture",
+              "required": false
+            },
+            {
+              "name": "noscript",
+              "type": "string",
+              "default": true,
+              "description": "Render noscript fallback",
+              "required": false
+            },
+            {
+              "name": "lazy",
+              "type": "string",
+              "default": true,
+              "description": "Load the picture lazily",
+              "required": false
+            },
+            {
+              "name": "sources",
+              "label": "Sources",
+              "description": "",
+              "type": "list",
+              "items": {
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "srcSet",
+                    "type": "string",
+                    "description": "Use a srcSet to display picture",
+                    "required": false
+                  },
+                  {
+                    "name": "media",
+                    "type": "string",
+                    "description": "TODO MEDIA DESCRIPTION",
+                    "required": false
+                  },
+                  {
+                    "name": "type",
+                    "type": "string",
+                    "description": "TODO TYPE DESCRIPTION",
+                    "required": false
+                  }
+                ]
+              }
+            },
+            {
+              "name": "pictureClassName",
+              "type": "string",
+              "description": "Set additional class(es) to the picture",
+              "required": false
+            },
+            {
+              "name": "Type",
+              "type": "text",
+              "description": "Internal type for interface resolution",
+              "default": "picture"
+            }
+          ]
+        },
+        {
+          "name": "logoHref",
+          "type": "string",
+          "default": "/",
+          "required": false
+        },
+        {
+          "name": "navItems",
+          "label": "NavItems",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "href",
+                "type": "string",
+                "required": false
+              },
+              {
+                "name": "label",
+                "type": "string",
+                "required": false
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "footer"
+        }
+      ]
+    },
+    {
+      "name": "gallery",
+      "label": "Gallery",
+      "description": "Component used to display a gallery of images",
+      "type": "object",
+      "fields": [
+        {
+          "name": "images",
+          "label": "Images",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "url",
+                "type": "string",
+                "description": "The URL of the image",
+                "required": false
+              },
+              {
+                "name": "alt",
+                "type": "string",
+                "description": "Alt text of the image",
+                "required": false
+              },
+              {
+                "name": "caption",
+                "type": "string",
+                "description": "The caption of the image",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "stack",
+              "value": "stack"
+            },
+            {
+              "label": "smallTiles",
+              "value": "smallTiles"
+            },
+            {
+              "label": "largeTiles",
+              "value": "largeTiles"
+            }
+          ],
+          "description": "The layout of the gallery images",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "gallery"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "label": "Header",
+      "description": "Header",
+      "type": "object",
+      "fields": [
+        {
+          "name": "logo",
+          "label": "Logo",
+          "description": "Base component to display a picture",
+          "type": "object",
+          "fields": [
+            {
+              "name": "src",
+              "type": "string",
+              "description": "Picture source",
+              "required": false
+            },
+            {
+              "name": "srcSet",
+              "type": "string",
+              "description": "Use a srcSet to display picture",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Alt text to display for picture",
+              "required": false
+            },
+            {
+              "name": "width",
+              "type": "string",
+              "description": "Width of the picture",
+              "required": false
+            },
+            {
+              "name": "height",
+              "type": "string",
+              "description": "Height of the picture",
+              "required": false
+            },
+            {
+              "name": "className",
+              "type": "string",
+              "description": "Add additional css classes that should be applied to the button",
+              "required": false
+            },
+            {
+              "name": "component",
+              "type": "string",
+              "description": "Optional custom component identifier",
+              "required": false
+            },
+            {
+              "name": "id",
+              "type": "string",
+              "description": "Add id attribute to the image",
+              "required": false
+            },
+            {
+              "name": "itemProp",
+              "type": "string",
+              "description": "Define an itemprop attribute for the picture",
+              "required": false
+            },
+            {
+              "name": "style",
+              "type": "string",
+              "description": "Define a style attribute for the picture",
+              "required": false
+            },
+            {
+              "name": "noscript",
+              "type": "string",
+              "default": true,
+              "description": "Render noscript fallback",
+              "required": false
+            },
+            {
+              "name": "lazy",
+              "type": "string",
+              "default": true,
+              "description": "Load the picture lazily",
+              "required": false
+            },
+            {
+              "name": "sources",
+              "label": "Sources",
+              "description": "",
+              "type": "list",
+              "items": {
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "srcSet",
+                    "type": "string",
+                    "description": "Use a srcSet to display picture",
+                    "required": false
+                  },
+                  {
+                    "name": "media",
+                    "type": "string",
+                    "description": "TODO MEDIA DESCRIPTION",
+                    "required": false
+                  },
+                  {
+                    "name": "type",
+                    "type": "string",
+                    "description": "TODO TYPE DESCRIPTION",
+                    "required": false
+                  }
+                ]
+              }
+            },
+            {
+              "name": "pictureClassName",
+              "type": "string",
+              "description": "Set additional class(es) to the picture",
+              "required": false
+            },
+            {
+              "name": "Type",
+              "type": "text",
+              "description": "Internal type for interface resolution",
+              "default": "picture"
+            }
+          ]
+        },
+        {
+          "name": "logoHref",
+          "type": "string",
+          "default": "/",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "header"
+        }
+      ]
+    },
+    {
+      "name": "headline",
+      "label": "Headline",
+      "description": "Component used for headlines",
+      "type": "object",
+      "fields": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text content of headline",
+          "required": true
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline content",
+          "required": false
+        },
+        {
+          "name": "switchOrder",
+          "type": "string",
+          "description": "Switch order of headline and subheadline",
+          "required": false
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            },
+            {
+              "label": "right",
+              "value": "right"
+            }
+          ],
+          "description": "Section alignment",
+          "required": false
+        },
+        {
+          "name": "level",
+          "type": "enum",
+          "options": [
+            {
+              "label": "h1",
+              "value": "h1"
+            },
+            {
+              "label": "h2",
+              "value": "h2"
+            },
+            {
+              "label": "h3",
+              "value": "h3"
+            },
+            {
+              "label": "h4",
+              "value": "h4"
+            },
+            {
+              "label": "p",
+              "value": "p"
+            }
+          ],
+          "default": "h2",
+          "description": "Level of headline to use",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "enum",
+          "options": [
+            {
+              "label": "h1",
+              "value": "h1"
+            },
+            {
+              "label": "h2",
+              "value": "h2"
+            },
+            {
+              "label": "h3",
+              "value": "h3"
+            },
+            {
+              "label": "h4",
+              "value": "h4"
+            },
+            {
+              "label": "p",
+              "value": "p"
+            }
+          ],
+          "default": "h2",
+          "description": "Style of headline to show",
+          "required": false
+        },
+        {
+          "name": "spaceAfter",
+          "type": "enum",
+          "options": [
+            {
+              "label": "minimum",
+              "value": "minimum"
+            },
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "large",
+              "value": "large"
+            }
+          ],
+          "default": "small",
+          "description": "Whether to display space after headline",
+          "required": false
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "description": "Set a custom class name",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "headline"
+        }
+      ]
+    },
+    {
+      "name": "logos",
+      "label": "Logos",
+      "description": "Component used to display a set of logos",
+      "type": "object",
+      "fields": [
+        {
+          "name": "tagline",
+          "type": "string",
+          "description": "A short tagline atop the logos",
+          "required": false
+        },
+        {
+          "name": "logos",
+          "label": "Logos",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "src",
+                "type": "string",
+                "description": "The URL of the logo image",
+                "required": false
+              },
+              {
+                "name": "alt",
+                "type": "string",
+                "description": "The alt text of the logo",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "center",
+          "description": "The alignment of the logo layout",
+          "required": false
+        },
+        {
+          "name": "cta",
+          "label": "Cta",
+          "description": "The call to action",
+          "type": "object",
+          "fields": [
+            {
+              "name": "toggle",
+              "type": "string",
+              "default": "false",
+              "description": "Activate/disable the CTA",
+              "required": false
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "description": "A short CTA text",
+              "required": false
+            },
+            {
+              "name": "link",
+              "type": "string",
+              "default": "#",
+              "description": "The CTA link",
+              "required": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "description": "The text label displayed on the link",
+              "required": false
+            },
+            {
+              "name": "style",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "button",
+                  "value": "button"
+                },
+                {
+                  "label": "text",
+                  "value": "text"
+                }
+              ],
+              "default": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "logos"
+        }
+      ]
+    },
+    {
+      "name": "logos_paid",
+      "label": "Logos Paid",
+      "description": "Component used to display a set of logos",
+      "type": "object",
+      "fields": [
+        {
+          "name": "tagline",
+          "type": "string",
+          "description": "A short tagline atop the logos",
+          "required": false
+        },
+        {
+          "name": "logos",
+          "label": "Logos",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "src",
+                "type": "string",
+                "description": "The URL of the logo image",
+                "required": false
+              },
+              {
+                "name": "alt",
+                "type": "string",
+                "description": "The alt text of the logo",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "center",
+          "description": "The alignment of the logo layout",
+          "required": false
+        },
+        {
+          "name": "logosPerRow",
+          "type": "string",
+          "description": "The amount of logos to display per row",
+          "required": false
+        },
+        {
+          "name": "cta",
+          "label": "Cta",
+          "description": "The call to action",
+          "type": "object",
+          "fields": [
+            {
+              "name": "toggle",
+              "type": "string",
+              "default": "false",
+              "description": "Activate/disable the CTA",
+              "required": false
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "description": "A short CTA text",
+              "required": false
+            },
+            {
+              "name": "link",
+              "type": "string",
+              "default": "#",
+              "description": "The CTA link",
+              "required": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "description": "The text label displayed on the link",
+              "required": false
+            },
+            {
+              "name": "style",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "button",
+                  "value": "button"
+                },
+                {
+                  "label": "text",
+                  "value": "text"
+                }
+              ],
+              "default": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "logos-paid"
+        }
+      ]
+    },
+    {
+      "name": "picture",
+      "label": "Picture",
+      "description": "Base component to display a picture",
+      "type": "object",
+      "fields": [
+        {
+          "name": "src",
+          "type": "string",
+          "description": "Picture source",
+          "required": false
+        },
+        {
+          "name": "srcSet",
+          "type": "string",
+          "description": "Use a srcSet to display picture",
+          "required": false
+        },
+        {
+          "name": "alt",
+          "type": "string",
+          "description": "Alt text to display for picture",
+          "required": false
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "description": "Width of the picture",
+          "required": false
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "description": "Height of the picture",
+          "required": false
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "description": "Add additional css classes that should be applied to the button",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "description": "Define a style attribute for the picture",
+          "required": false
+        },
+        {
+          "name": "lazy",
+          "type": "string",
+          "default": true,
+          "description": "Load the picture lazily",
+          "required": false
+        },
+        {
+          "name": "sources",
+          "label": "Sources",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "srcSet",
+                "type": "string",
+                "description": "Use a srcSet to display picture",
+                "required": false
+              },
+              {
+                "name": "media",
+                "type": "string",
+                "description": "TODO MEDIA DESCRIPTION",
+                "required": false
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "description": "TODO TYPE DESCRIPTION",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "pictureClassName",
+          "type": "string",
+          "description": "Set additional class(es) to the picture",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "picture"
+        }
+      ]
+    },
+    {
+      "name": "pictureText",
+      "label": "PictureText",
+      "description": "Component used to display an image beside or above/below a text block",
+      "type": "object",
+      "fields": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text content to display beside the image",
+          "required": true
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "source",
+              "type": "string",
+              "description": "URL of the image to display",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Alt text of the image",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "above",
+              "value": "above"
+            },
+            {
+              "label": "below",
+              "value": "below"
+            },
+            {
+              "label": "beside-right",
+              "value": "beside_right"
+            },
+            {
+              "label": "beside-left",
+              "value": "beside_left"
+            }
+          ],
+          "description": "Position of the image relative to the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "pictureText"
+        }
+      ]
+    },
+    {
+      "name": "cta",
+      "label": "Cta",
+      "description": "Cta",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the module element",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "ctas",
+          "label": "Ctas",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Label for the Call to action",
+                "required": false
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target for the Call to action",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "cta"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "label": "Button",
+      "description": "Component used for user interaction",
+      "type": "object",
+      "fields": [
+        {
+          "name": "label",
+          "type": "string",
+          "description": "Text content to display inside the button",
+          "required": true
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "description": "Target that should be linked, makes the button behave like a link semantically",
+          "required": false
+        },
+        {
+          "name": "variant",
+          "type": "enum",
+          "options": [
+            {
+              "label": "primary",
+              "value": "primary"
+            },
+            {
+              "label": "secondary",
+              "value": "secondary"
+            },
+            {
+              "label": "tertiary",
+              "value": "tertiary"
+            }
+          ],
+          "default": "secondary",
+          "description": "Variant of button to be used",
+          "required": false
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "description": "Choose an icon",
+          "required": false
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "options": [
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "medium",
+              "value": "medium"
+            },
+            {
+              "label": "large",
+              "value": "large"
+            }
+          ],
+          "default": "medium",
+          "description": "Size of button to use",
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "string",
+          "description": "Whether the button should be disabled",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "button"
+        }
+      ]
+    },
+    {
+      "name": "hero",
+      "label": "Hero",
+      "description": "Hero",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the visual",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "height",
+          "type": "enum",
+          "options": [
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "fullImage",
+              "value": "fullImage"
+            },
+            {
+              "label": "fullScreen",
+              "value": "fullScreen"
+            }
+          ],
+          "default": "default",
+          "description": "Height",
+          "required": false
+        },
+        {
+          "name": "textbox",
+          "type": "string",
+          "default": true,
+          "description": "Toggle wether you want your text to be displayed within in box",
+          "required": false
+        },
+        {
+          "name": "cta",
+          "label": "Cta",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "toggle",
+              "type": "string",
+              "default": true,
+              "description": "Toggle wether the CTA is displayed or not",
+              "required": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "description": "Text content to display inside the button",
+              "required": false
+            },
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target that should be linked, makes the button behave like a link semantically",
+              "required": false
+            },
+            {
+              "name": "icon",
+              "type": "string",
+              "description": "Choose an icon",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "overlay",
+          "type": "string",
+          "description": "Enable grid layer",
+          "required": false
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "description": "Sources of background images for different screen sizes",
+          "type": "object",
+          "fields": [
+            {
+              "name": "srcMobile",
+              "type": "string",
+              "description": "Background image source for small screens",
+              "required": false
+            },
+            {
+              "name": "srcTablet",
+              "type": "string",
+              "description": "Background image source for medium screens",
+              "required": false
+            },
+            {
+              "name": "srcDesktop",
+              "type": "string",
+              "description": "Background image source for large screens",
+              "required": false
+            },
+            {
+              "name": "src",
+              "type": "string",
+              "description": "Override for img tag of picture element, if needed",
+              "required": false
+            },
+            {
+              "name": "indent",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "none",
+                  "value": "none"
+                },
+                {
+                  "label": "left",
+                  "value": "left"
+                },
+                {
+                  "label": "right",
+                  "value": "right"
+                }
+              ],
+              "default": "none",
+              "description": "Choose to indent the image horizontally on small screens",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Alt text to display for picture",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "textPosition",
+          "type": "enum",
+          "options": [
+            {
+              "label": "center",
+              "value": "center"
+            },
+            {
+              "label": "below",
+              "value": "below"
+            },
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "right",
+              "value": "right"
+            }
+          ],
+          "default": "bottom",
+          "description": "Choose the alginment of the module content",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "hero"
+        }
+      ]
+    },
+    {
+      "name": "mosaic",
+      "label": "Mosaic",
+      "description": "Mosaic",
+      "type": "object",
+      "fields": [
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "alternate",
+              "value": "alternate"
+            },
+            {
+              "label": "textLeft",
+              "value": "textLeft"
+            },
+            {
+              "label": "textRight",
+              "value": "textRight"
+            }
+          ],
+          "default": "alternate",
+          "description": "Layout of the mosaic component",
+          "required": false
+        },
+        {
+          "name": "tiles",
+          "label": "Tiles",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "headline",
+                "type": "string",
+                "description": "Headline for the visual",
+                "required": false
+              },
+              {
+                "name": "sub",
+                "type": "string",
+                "description": "Subheadline below the module headline",
+                "required": false
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "description": "Info text for the module element",
+                "required": false
+              },
+              {
+                "name": "image",
+                "type": "string",
+                "description": "Info text for the module element",
+                "required": false
+              },
+              {
+                "name": "cta",
+                "label": "Cta",
+                "description": "",
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "toggle",
+                    "type": "string",
+                    "default": true,
+                    "description": "Toggle wether the CTA is displayed or not",
+                    "required": false
+                  },
+                  {
+                    "name": "label",
+                    "type": "string",
+                    "description": "Text content to display inside the button",
+                    "required": false
+                  },
+                  {
+                    "name": "target",
+                    "type": "string",
+                    "description": "Target that should be linked, makes the button behave like a link semantically",
+                    "required": false
+                  },
+                  {
+                    "name": "icon",
+                    "type": "string",
+                    "description": "Choose an icon",
+                    "required": false
+                  }
+                ]
+              },
+              {
+                "name": "backgroundColor",
+                "type": "string",
+                "description": "Background color for the whole element",
+                "required": false
+              },
+              {
+                "name": "textColor",
+                "type": "string",
+                "description": "Overwrite the color to use for the text content",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "mosaic"
+        }
+      ]
+    },
+    {
+      "name": "section",
+      "label": "Section",
+      "description": "Component used to layout components into pages",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the section",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline for the section",
+          "required": false
+        },
+        {
+          "name": "switchHeadlineOrder",
+          "type": "string",
+          "description": "Switch the order of headline and subheadline",
+          "required": false
+        },
+        {
+          "name": "width",
+          "type": "enum",
+          "options": [
+            {
+              "label": "full",
+              "value": "full"
+            },
+            {
+              "label": "max",
+              "value": "max"
+            },
+            {
+              "label": "wide",
+              "value": "wide"
+            },
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "narrow",
+              "value": "narrow"
+            }
+          ],
+          "default": "default",
+          "description": "Width of section to use",
+          "required": false
+        },
+        {
+          "name": "gutter",
+          "type": "enum",
+          "options": [
+            {
+              "label": "large",
+              "value": "large"
+            },
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "none",
+              "value": "none"
+            }
+          ],
+          "default": "default",
+          "description": "Size of gutter to use",
+          "required": false
+        },
+        {
+          "name": "mode",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "tile",
+              "value": "tile"
+            },
+            {
+              "label": "list",
+              "value": "list"
+            }
+          ],
+          "default": "default",
+          "description": "Layout mode used for section contents",
+          "required": false
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "left",
+          "description": "Alignment for the section headline and cta's",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "accent",
+              "value": "accent"
+            },
+            {
+              "label": "bold",
+              "value": "bold"
+            }
+          ],
+          "default": "default",
+          "description": "Style of background",
+          "required": false
+        },
+        {
+          "name": "components",
+          "type": "list",
+          "items": {
+            "type": "model",
+            "models": ["hero", "cta", "mosaic"]
+          },
+          "description": "Component used to layout components into pages",
+          "required": false
+        },
+        {
+          "name": "spaceBefore",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "none",
+              "value": "none"
+            }
+          ],
+          "default": "default",
+          "description": "Amount of spacing before the section",
+          "required": false
+        },
+        {
+          "name": "spaceAfter",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "none",
+              "value": "none"
+            }
+          ],
+          "default": "default",
+          "description": "Amount of spacing after the section",
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "string",
+          "description": "Whether to invert the section",
+          "required": false
+        },
+        {
+          "name": "ctas",
+          "label": "Ctas",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Label for the Call to action",
+                "required": false
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target for the Call to action",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "section"
+        }
+      ],
+      "groups": ["Section"]
+    },
+    {
+      "name": "split",
+      "label": "Split",
+      "description": "Split",
+      "type": "object",
+      "fields": [
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "sidebarRight",
+              "value": "sidebarRight"
+            },
+            {
+              "label": "sidebarLeft",
+              "value": "sidebarLeft"
+            },
+            {
+              "label": "even",
+              "value": "even"
+            }
+          ],
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "split"
+        }
+      ]
+    },
+    {
+      "name": "stats",
+      "label": "Stats",
+      "description": "Display a set of stats in a grid",
+      "type": "object",
+      "fields": [
+        {
+          "name": "stats",
+          "label": "Stats",
+          "description": "Stat",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "number",
+                "type": "string",
+                "description": "The number of the stat",
+                "required": false
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "description": "Optional description of the stat",
+                "required": false
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "description": "Title of the stat",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "stats"
+        }
+      ]
+    },
+    {
+      "name": "stats_paid",
+      "label": "Stats Paid",
+      "description": "Component used to display stats with a number upcounter",
+      "type": "object",
+      "fields": [
+        {
+          "name": "stats",
+          "label": "Stats",
+          "description": "Stat",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "number",
+                "type": "string",
+                "description": "The number of the stat",
+                "required": false
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "description": "Optional description of the stat",
+                "required": false
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "description": "Title of the stat",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Optional icon of the stat",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "stats-paid"
+        }
+      ]
+    },
+    {
+      "name": "teaser_card",
+      "label": "Teaser Card",
+      "description": "Component used to tease content",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the teaser card",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Body text for the teaser card",
+          "required": false
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "description": "Target that should be linked",
+          "required": false
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Image to display as cover",
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "string",
+          "description": "Whether to invert the card",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "teaser-card"
+        }
+      ]
+    },
+    {
+      "name": "testimonials",
+      "label": "Testimonials",
+      "description": "Display testimonials with an optional image and rating",
+      "type": "object",
+      "fields": [
+        {
+          "name": "testimonials",
+          "label": "Testimonials",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "quote",
+                "type": "string",
+                "description": "The testimonial quote",
+                "required": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the quote author",
+                "required": false
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "description": "The title of the quote author",
+                "required": false
+              },
+              {
+                "name": "image",
+                "label": "Image",
+                "description": "",
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "src",
+                    "type": "string",
+                    "description": "The image to display with the testimonial",
+                    "required": false
+                  },
+                  {
+                    "name": "alt",
+                    "type": "string",
+                    "description": "The alt text of the image file",
+                    "required": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "testimonials"
+        }
+      ]
+    },
+    {
+      "name": "testimonials_paid",
+      "label": "Testimonials Paid",
+      "description": "Display testimonials with an optional image and rating",
+      "type": "object",
+      "fields": [
+        {
+          "name": "testimonials",
+          "label": "Testimonials",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "quote",
+                "type": "string",
+                "description": "The testimonial quote",
+                "required": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "description": "The name of the quote author",
+                "required": false
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "description": "The title of the quote author",
+                "required": false
+              },
+              {
+                "name": "image",
+                "label": "Image",
+                "description": "",
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "src",
+                    "type": "string",
+                    "description": "The image to display with the testimonial",
+                    "required": false
+                  },
+                  {
+                    "name": "alt",
+                    "type": "string",
+                    "description": "The alt text of the image file",
+                    "required": false
+                  }
+                ]
+              },
+              {
+                "name": "rating",
+                "type": "string",
+                "description": "The rating of the testimonial, from 1 to 5",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "testimonials-paid"
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "label": "Text",
+      "description": "Component used for displaying text in chapters",
+      "type": "object",
+      "fields": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text",
+          "required": false
+        },
+        {
+          "name": "layoutVariant",
+          "type": "enum",
+          "options": [
+            {
+              "label": "singleColumn",
+              "value": "singleColumn"
+            },
+            {
+              "label": "multiColumn",
+              "value": "multiColumn"
+            }
+          ],
+          "default": "singleColumn",
+          "description": "Variant of layout to be used",
+          "required": false
+        },
+        {
+          "name": "textStyle",
+          "type": "enum",
+          "options": [
+            {
+              "label": "highlight",
+              "value": "highlight"
+            },
+            {
+              "label": "default",
+              "value": "default"
+            }
+          ],
+          "default": "normal",
+          "description": "Style of the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "text"
+        }
+      ]
+    },
+    {
+      "name": "video_curtain",
+      "label": "Video Curtain",
+      "description": "Video Curtain",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the visual",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "cta",
+          "label": "Cta",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "toggle",
+              "type": "string",
+              "default": true,
+              "description": "Toggle wether the CTA is displayed or not",
+              "required": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "description": "Text content to display inside the button",
+              "required": false
+            },
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target that should be linked, makes the button behave like a link semantically",
+              "required": false
+            },
+            {
+              "name": "icon",
+              "type": "string",
+              "description": "Choose an icon",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "overlay",
+          "type": "string",
+          "description": "Enable grid layer",
+          "required": false
+        },
+        {
+          "name": "video",
+          "label": "Video",
+          "description": "Sources of background videos for different screen sizes",
+          "type": "object",
+          "fields": [
+            {
+              "name": "srcMobile",
+              "type": "string",
+              "description": "Background video source for small screens",
+              "required": false
+            },
+            {
+              "name": "srcTablet",
+              "type": "string",
+              "description": "Background video source for medium screens",
+              "required": false
+            },
+            {
+              "name": "srcDesktop",
+              "type": "string",
+              "description": "Background video source for large screens",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "verticalAlign",
+          "type": "enum",
+          "options": [
+            {
+              "label": "top",
+              "value": "top"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            },
+            {
+              "label": "bottom",
+              "value": "bottom"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the module content",
+          "required": false
+        },
+        {
+          "name": "horizontalAlign",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            },
+            {
+              "label": "right",
+              "value": "right"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the module content",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "video-curtain"
+        }
+      ]
+    }
+  ]
+}
