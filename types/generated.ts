@@ -61,23 +61,23 @@ export type ContentObjectType =
   | "hero"
   | "cta"
   | "mosaic"
-  | "cta-paid"
+  | "cta_paid"
   | "faq"
-  | "image-story"
+  | "image_story"
   | "split"
   | "stats"
-  | "stats-paid"
+  | "stats_paid"
   | "features"
   | "gallery"
   | "headline"
-  | "teaser-card"
+  | "teaser_card"
   | "testimonials"
-  | "testimonials-paid"
+  | "testimonials_paid"
   | "text"
-  | "video-curtain"
-  | "image-text"
+  | "video_curtain"
+  | "image_text"
   | "logos"
-  | "logos-paid";
+  | "logos_paid";
 
 export type PageLayout = BaseContentObject & {
   type: "page";
@@ -140,17 +140,17 @@ export type Cta = BaseContentObject &
 export type Mosaic = BaseContentObject &
   React.ComponentProps<typeof DsaMosaic> & { type: "mosaic" };
 export type CtaPaid = BaseContentObject &
-  React.ComponentProps<typeof DsaCtaPaid> & { type: "cta-paid" };
+  React.ComponentProps<typeof DsaCtaPaid> & { type: "cta_paid" };
 export type Faq = BaseContentObject &
   React.ComponentProps<typeof DsaFaq> & { type: "faq" };
 export type ImageStory = BaseContentObject &
-  React.ComponentProps<typeof DsaImageStory> & { type: "image-story" };
+  React.ComponentProps<typeof DsaImageStory> & { type: "image_story" };
 export type Split = BaseContentObject &
   React.ComponentProps<typeof DsaSplit> & { type: "split" };
 export type Stats = BaseContentObject &
   React.ComponentProps<typeof DsaStats> & { type: "stats" };
 export type StatsPaid = BaseContentObject &
-  React.ComponentProps<typeof DsaStatsPaid> & { type: "stats-paid" };
+  React.ComponentProps<typeof DsaStatsPaid> & { type: "stats_paid" };
 export type Features = BaseContentObject &
   React.ComponentProps<typeof DsaFeatures> & { type: "features" };
 export type Gallery = BaseContentObject &
@@ -158,20 +158,20 @@ export type Gallery = BaseContentObject &
 export type Headline = BaseContentObject &
   React.ComponentProps<typeof DsaHeadline> & { type: "headline" };
 export type TeaserCard = BaseContentObject &
-  React.ComponentProps<typeof DsaTeaserCard> & { type: "teaser-card" };
+  React.ComponentProps<typeof DsaTeaserCard> & { type: "teaser_card" };
 export type Testimonials = BaseContentObject &
   React.ComponentProps<typeof DsaTestimonials> & { type: "testimonials" };
 export type TestimonialsPaid = BaseContentObject &
   React.ComponentProps<typeof DsaTestimonialsPaid> & {
-    type: "testimonials-paid";
+    type: "testimonials_paid";
   };
 export type Text = BaseContentObject &
   React.ComponentProps<typeof DsaText> & { type: "text" };
 export type VideoCurtain = BaseContentObject &
-  React.ComponentProps<typeof DsaVideoCurtain> & { type: "video-curtain" };
+  React.ComponentProps<typeof DsaVideoCurtain> & { type: "video_curtain" };
 export type ImageText = BaseContentObject &
-  React.ComponentProps<typeof DsaImageText> & { type: "image-text" };
+  React.ComponentProps<typeof DsaImageText> & { type: "image_text" };
 export type Logos = BaseContentObject &
   React.ComponentProps<typeof DsaLogos> & { type: "logos" };
 export type LogosPaid = BaseContentObject &
-  React.ComponentProps<typeof DsaLogosPaid> & { type: "logos-paid" };
+  React.ComponentProps<typeof DsaLogosPaid> & { type: "logos_paid" };

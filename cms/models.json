@@ -231,421 +231,6 @@
       ]
     },
     {
-      "name": "cta_paid",
-      "label": "Cta Paid",
-      "description": "Cta Paid",
-      "type": "object",
-      "fields": [
-        {
-          "name": "headline",
-          "type": "string",
-          "description": "Headline for the module element",
-          "required": false
-        },
-        {
-          "name": "largeHeadline",
-          "type": "string",
-          "description": "Make the headline larger",
-          "required": false
-        },
-        {
-          "name": "sub",
-          "type": "string",
-          "description": "Subheadline below the module headline",
-          "required": false
-        },
-        {
-          "name": "text",
-          "type": "string",
-          "description": "Info text for the module element",
-          "required": false
-        },
-        {
-          "name": "fullWidth",
-          "type": "string",
-          "description": "Set the width of the content to the full width of the element",
-          "required": false
-        },
-        {
-          "name": "ctas",
-          "label": "Ctas",
-          "description": "",
-          "type": "list",
-          "items": {
-            "type": "object",
-            "fields": [
-              {
-                "name": "label",
-                "type": "string",
-                "description": "Label for the Call to action",
-                "required": false
-              },
-              {
-                "name": "target",
-                "type": "string",
-                "description": "Target for the Call to action",
-                "required": false
-              },
-              {
-                "name": "icon",
-                "type": "string",
-                "description": "Choose an icon",
-                "required": false
-              }
-            ]
-          }
-        },
-        {
-          "name": "backgroundColor",
-          "type": "string",
-          "description": "Background color for the whole element",
-          "required": false
-        },
-        {
-          "name": "backgroundImage",
-          "type": "string",
-          "description": "Background image for the whole element",
-          "required": false
-        },
-        {
-          "name": "image",
-          "label": "Image",
-          "description": "Image displayed alongside the text content",
-          "type": "object",
-          "fields": [
-            {
-              "name": "source",
-              "type": "string",
-              "description": "Image source to use",
-              "required": false
-            },
-            {
-              "name": "ratio",
-              "type": "enum",
-              "options": [
-                {
-                  "label": "4:3",
-                  "value": "VALUE_4_3"
-                },
-                {
-                  "label": "3:2",
-                  "value": "VALUE_3_2"
-                },
-                {
-                  "label": "16:9",
-                  "value": "VALUE_16_9"
-                },
-                {
-                  "label": "1:1",
-                  "value": "VALUE_1_1"
-                },
-                {
-                  "label": "none",
-                  "value": "none"
-                }
-              ],
-              "default": "none",
-              "description": "Select an aspect ratio to use for cropping and displaying the image",
-              "required": false
-            },
-            {
-              "name": "vAlign",
-              "type": "enum",
-              "options": [
-                {
-                  "label": "center",
-                  "value": "center"
-                },
-                {
-                  "label": "top",
-                  "value": "top"
-                },
-                {
-                  "label": "top-edge",
-                  "value": "top_edge"
-                },
-                {
-                  "label": "bottom",
-                  "value": "bottom"
-                },
-                {
-                  "label": "bottom-edge",
-                  "value": "bottom_edge"
-                }
-              ],
-              "default": "center",
-              "description": "Select a vertical alignment for the image",
-              "required": false
-            },
-            {
-              "name": "hAlign",
-              "type": "enum",
-              "options": [
-                {
-                  "label": "center",
-                  "value": "center"
-                },
-                {
-                  "label": "left",
-                  "value": "left"
-                },
-                {
-                  "label": "left-edge",
-                  "value": "left_edge"
-                },
-                {
-                  "label": "right",
-                  "value": "right"
-                },
-                {
-                  "label": "right-edge",
-                  "value": "right_edge"
-                }
-              ],
-              "default": "center",
-              "description": "Select a horizontal alignment for the image",
-              "required": false
-            },
-            {
-              "name": "order",
-              "label": "Order",
-              "description": "Choose what comes first on mobile and desktop: image or text",
-              "type": "object",
-              "fields": [
-                {
-                  "name": "mobileImageLast",
-                  "type": "string",
-                  "description": "Switch to displaying the image after the text on mobile",
-                  "required": false
-                },
-                {
-                  "name": "desktopImageLast",
-                  "type": "string",
-                  "default": true,
-                  "description": "Switch to displaying the image after the text on desktop",
-                  "required": false
-                }
-              ]
-            },
-            {
-              "name": "alt",
-              "type": "string",
-              "description": "Image description",
-              "required": false
-            }
-          ]
-        },
-        {
-          "name": "align",
-          "type": "enum",
-          "options": [
-            {
-              "label": "left",
-              "value": "left"
-            },
-            {
-              "label": "center",
-              "value": "center"
-            }
-          ],
-          "default": "left",
-          "description": "Choose the alginment of the text",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "cta-paid"
-        }
-      ]
-    },
-    {
-      "name": "faq",
-      "label": "Faq",
-      "description": "Component used to display a FAQ section",
-      "type": "object",
-      "fields": [
-        {
-          "name": "questions",
-          "label": "Questions",
-          "description": "",
-          "type": "list",
-          "items": {
-            "type": "object",
-            "fields": [
-              {
-                "name": "question",
-                "type": "string",
-                "description": "The question",
-                "required": false
-              },
-              {
-                "name": "answer",
-                "type": "string",
-                "description": "The answer to the question",
-                "required": false
-              }
-            ]
-          }
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "faq"
-        }
-      ]
-    },
-    {
-      "name": "features",
-      "label": "Features",
-      "description": "Component used to display a set of features",
-      "type": "object",
-      "fields": [
-        {
-          "name": "layout",
-          "type": "enum",
-          "options": [
-            {
-              "label": "largeTiles",
-              "value": "largeTiles"
-            },
-            {
-              "label": "smallTiles",
-              "value": "smallTiles"
-            },
-            {
-              "label": "list",
-              "value": "list"
-            }
-          ],
-          "default": "largeTiles",
-          "description": "The layout variant to use for the features",
-          "required": false
-        },
-        {
-          "name": "style",
-          "type": "enum",
-          "options": [
-            {
-              "label": "intext",
-              "value": "intext"
-            },
-            {
-              "label": "stack",
-              "value": "stack"
-            },
-            {
-              "label": "centered",
-              "value": "centered"
-            },
-            {
-              "label": "besideLarge",
-              "value": "besideLarge"
-            },
-            {
-              "label": "besideSmall",
-              "value": "besideSmall"
-            }
-          ],
-          "default": "besideLarge",
-          "required": false
-        },
-        {
-          "name": "ctas",
-          "label": "Ctas",
-          "description": "",
-          "type": "object",
-          "fields": [
-            {
-              "name": "toggle",
-              "type": "string",
-              "default": "false",
-              "description": "Activate/disable the CTA",
-              "required": false
-            },
-            {
-              "name": "style",
-              "type": "enum",
-              "options": [
-                {
-                  "label": "button",
-                  "value": "button"
-                },
-                {
-                  "label": "link",
-                  "value": "link"
-                },
-                {
-                  "label": "intext",
-                  "value": "intext"
-                }
-              ],
-              "default": "text",
-              "required": false
-            }
-          ]
-        },
-        {
-          "name": "features",
-          "label": "Features",
-          "description": "",
-          "type": "list",
-          "items": {
-            "type": "object",
-            "fields": [
-              {
-                "name": "icon",
-                "type": "string",
-                "description": "The icon for the feature",
-                "required": false
-              },
-              {
-                "name": "title",
-                "type": "string",
-                "description": "The title of the feature",
-                "required": false
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "description": "The description of the feature",
-                "required": false
-              },
-              {
-                "name": "cta",
-                "label": "Cta",
-                "description": "The call to action",
-                "type": "object",
-                "fields": [
-                  {
-                    "name": "link",
-                    "type": "string",
-                    "default": "#",
-                    "description": "The CTA link",
-                    "required": false
-                  },
-                  {
-                    "name": "label",
-                    "type": "string",
-                    "description": "The text label displayed on the link",
-                    "required": false
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "features"
-        }
-      ]
-    },
-    {
       "name": "footer",
       "label": "Footer",
       "description": "Footer",
@@ -815,65 +400,166 @@
       ]
     },
     {
-      "name": "gallery",
-      "label": "Gallery",
-      "description": "Component used to display a gallery of images",
+      "name": "nav_main",
+      "label": "Nav Main",
+      "description": "Nav Main",
       "type": "object",
       "fields": [
         {
-          "name": "images",
-          "label": "Images",
+          "name": "logo",
+          "label": "Logo",
+          "description": "Base component to display a picture",
+          "type": "object",
+          "fields": [
+            {
+              "name": "src",
+              "type": "string",
+              "description": "Picture source",
+              "required": false
+            },
+            {
+              "name": "srcSet",
+              "type": "string",
+              "description": "Use a srcSet to display picture",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Alt text to display for picture",
+              "required": false
+            },
+            {
+              "name": "width",
+              "type": "string",
+              "description": "Width of the picture",
+              "required": false
+            },
+            {
+              "name": "height",
+              "type": "string",
+              "description": "Height of the picture",
+              "required": false
+            },
+            {
+              "name": "className",
+              "type": "string",
+              "description": "Add additional css classes that should be applied to the button",
+              "required": false
+            },
+            {
+              "name": "component",
+              "type": "string",
+              "description": "Optional custom component identifier",
+              "required": false
+            },
+            {
+              "name": "id",
+              "type": "string",
+              "description": "Add id attribute to the image",
+              "required": false
+            },
+            {
+              "name": "itemProp",
+              "type": "string",
+              "description": "Define an itemprop attribute for the picture",
+              "required": false
+            },
+            {
+              "name": "style",
+              "type": "string",
+              "description": "Define a style attribute for the picture",
+              "required": false
+            },
+            {
+              "name": "noscript",
+              "type": "string",
+              "default": true,
+              "description": "Render noscript fallback",
+              "required": false
+            },
+            {
+              "name": "lazy",
+              "type": "string",
+              "default": true,
+              "description": "Load the picture lazily",
+              "required": false
+            },
+            {
+              "name": "sources",
+              "label": "Sources",
+              "description": "",
+              "type": "list",
+              "items": {
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "srcSet",
+                    "type": "string",
+                    "description": "Use a srcSet to display picture",
+                    "required": false
+                  },
+                  {
+                    "name": "media",
+                    "type": "string",
+                    "description": "TODO MEDIA DESCRIPTION",
+                    "required": false
+                  },
+                  {
+                    "name": "type",
+                    "type": "string",
+                    "description": "TODO TYPE DESCRIPTION",
+                    "required": false
+                  }
+                ]
+              }
+            },
+            {
+              "name": "pictureClassName",
+              "type": "string",
+              "description": "Set additional class(es) to the picture",
+              "required": false
+            },
+            {
+              "name": "Type",
+              "type": "text",
+              "description": "Internal type for interface resolution",
+              "default": "picture"
+            }
+          ]
+        },
+        {
+          "name": "logoHref",
+          "type": "string",
+          "default": "/",
+          "required": false
+        },
+        {
+          "name": "items",
+          "label": "Items",
           "description": "",
           "type": "list",
           "items": {
             "type": "object",
             "fields": [
               {
-                "name": "url",
+                "name": "href",
                 "type": "string",
-                "description": "The URL of the image",
                 "required": false
               },
               {
-                "name": "alt",
+                "name": "label",
                 "type": "string",
-                "description": "Alt text of the image",
-                "required": false
-              },
-              {
-                "name": "caption",
-                "type": "string",
-                "description": "The caption of the image",
                 "required": false
               }
             ]
           }
         },
         {
-          "name": "layout",
-          "type": "enum",
-          "options": [
-            {
-              "label": "stack",
-              "value": "stack"
-            },
-            {
-              "label": "smallTiles",
-              "value": "smallTiles"
-            },
-            {
-              "label": "largeTiles",
-              "value": "largeTiles"
-            }
-          ],
-          "description": "The layout of the gallery images",
-          "required": false
-        },
-        {
           "name": "Type",
           "type": "text",
           "description": "Internal type for interface resolution",
-          "default": "gallery"
+          "default": "nav-main"
         }
       ]
     },
@@ -1013,10 +699,901 @@
           "required": false
         },
         {
+          "name": "floating",
+          "type": "string",
+          "description": "Make the header float over the first Section",
+          "required": false
+        },
+        {
+          "name": "navItems",
+          "label": "NavItems",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "href",
+                "type": "string",
+                "required": false
+              },
+              {
+                "name": "label",
+                "type": "string",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
           "name": "Type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "header"
+        }
+      ]
+    },
+    {
+      "name": "image",
+      "label": "Image",
+      "description": "Base component to display a picture",
+      "type": "object",
+      "fields": [
+        {
+          "name": "src",
+          "type": "string",
+          "description": "Picture source",
+          "required": false
+        },
+        {
+          "name": "srcSet",
+          "type": "string",
+          "description": "Use a srcSet to display picture",
+          "required": false
+        },
+        {
+          "name": "alt",
+          "type": "string",
+          "description": "Alt text to display for picture",
+          "required": false
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "description": "Width of the picture",
+          "required": false
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "description": "Height of the picture",
+          "required": false
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "description": "Add additional css classes that should be applied to the button",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "description": "Define a style attribute for the picture",
+          "required": false
+        },
+        {
+          "name": "lazy",
+          "type": "string",
+          "default": true,
+          "description": "Load the picture lazily",
+          "required": false
+        },
+        {
+          "name": "sources",
+          "label": "Sources",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "srcSet",
+                "type": "string",
+                "description": "Use a srcSet to display picture",
+                "required": false
+              },
+              {
+                "name": "media",
+                "type": "string",
+                "description": "TODO MEDIA DESCRIPTION",
+                "required": false
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "description": "TODO TYPE DESCRIPTION",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "pictureClassName",
+          "type": "string",
+          "description": "Set additional class(es) to the picture",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "image"
+        }
+      ]
+    },
+    {
+      "name": "button_group",
+      "label": "Button Group",
+      "description": "Button Group",
+      "type": "object",
+      "fields": [
+        {
+          "name": "button",
+          "label": "Button",
+          "description": "Component used for user interaction",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Text content to display inside the button",
+                "required": true
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "required": false
+              },
+              {
+                "name": "variant",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "secondary",
+                    "value": "secondary"
+                  },
+                  {
+                    "label": "tertiary",
+                    "value": "tertiary"
+                  }
+                ],
+                "default": "secondary",
+                "description": "Variant of button to be used",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              },
+              {
+                "name": "size",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ],
+                "default": "medium",
+                "description": "Size of button to use",
+                "required": false
+              },
+              {
+                "name": "disabled",
+                "type": "string",
+                "description": "Whether the button should be disabled",
+                "required": false
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "button"
+              }
+            ]
+          }
+        },
+        {
+          "name": "arrangement",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            },
+            {
+              "label": "right",
+              "value": "right"
+            },
+            {
+              "label": "space-between",
+              "value": "space_between"
+            },
+            {
+              "label": "grow",
+              "value": "grow"
+            }
+          ],
+          "default": "left",
+          "description": "Vertical arrangement of the buttons",
+          "required": false
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "description": "Add additional css classes that should be applied to the button",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "button-group"
+        }
+      ]
+    },
+    {
+      "name": "cta",
+      "label": "Cta",
+      "description": "Cta",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the module element",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "default": true,
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "button",
+          "label": "Button",
+          "description": "Component used for user interaction",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Text content to display inside the button",
+                "required": true
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "required": false
+              },
+              {
+                "name": "variant",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "secondary",
+                    "value": "secondary"
+                  },
+                  {
+                    "label": "tertiary",
+                    "value": "tertiary"
+                  }
+                ],
+                "default": "secondary",
+                "description": "Variant of button to be used",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              },
+              {
+                "name": "size",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ],
+                "default": "medium",
+                "description": "Size of button to use",
+                "required": false
+              },
+              {
+                "name": "disabled",
+                "type": "string",
+                "description": "Whether the button should be disabled",
+                "required": false
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "button"
+              }
+            ]
+          }
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "cta"
+        }
+      ]
+    },
+    {
+      "name": "cta_paid",
+      "label": "Cta Paid",
+      "description": "Cta Paid",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the module element",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "fullWidth",
+          "type": "string",
+          "description": "Set the width of the content to the full width of the element",
+          "required": false
+        },
+        {
+          "name": "button",
+          "label": "Button",
+          "description": "Component used for user interaction",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Text content to display inside the button",
+                "required": true
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "required": false
+              },
+              {
+                "name": "variant",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "secondary",
+                    "value": "secondary"
+                  },
+                  {
+                    "label": "tertiary",
+                    "value": "tertiary"
+                  }
+                ],
+                "default": "secondary",
+                "description": "Variant of button to be used",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              },
+              {
+                "name": "size",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ],
+                "default": "medium",
+                "description": "Size of button to use",
+                "required": false
+              },
+              {
+                "name": "disabled",
+                "type": "string",
+                "description": "Whether the button should be disabled",
+                "required": false
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "button"
+              }
+            ]
+          }
+        },
+        {
+          "name": "backgroundColor",
+          "type": "string",
+          "description": "Background color for the whole element",
+          "required": false
+        },
+        {
+          "name": "backgroundImage",
+          "type": "string",
+          "description": "Background image for the whole element",
+          "required": false
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "description": "Image displayed alongside the text content",
+          "type": "object",
+          "fields": [
+            {
+              "name": "src",
+              "type": "string",
+              "description": "Image source to use",
+              "required": false
+            },
+            {
+              "name": "vAlign",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "center",
+                  "value": "center"
+                },
+                {
+                  "label": "top",
+                  "value": "top"
+                },
+                {
+                  "label": "bottom",
+                  "value": "bottom"
+                }
+              ],
+              "default": "center",
+              "description": "Select a vertical alignment for the image",
+              "required": false
+            },
+            {
+              "name": "hAlign",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "center",
+                  "value": "center"
+                },
+                {
+                  "label": "left",
+                  "value": "left"
+                },
+                {
+                  "label": "right",
+                  "value": "right"
+                }
+              ],
+              "default": "center",
+              "description": "Select a horizontal alignment for the image",
+              "required": false
+            },
+            {
+              "name": "padding",
+              "type": "string",
+              "default": true,
+              "description": "Toggle padding of the image",
+              "required": false
+            },
+            {
+              "name": "order",
+              "label": "Order",
+              "description": "Choose what comes first on mobile and desktop: image or text",
+              "type": "object",
+              "fields": [
+                {
+                  "name": "mobileImageLast",
+                  "type": "string",
+                  "description": "Switch to displaying the image after the text on mobile",
+                  "required": false
+                },
+                {
+                  "name": "desktopImageLast",
+                  "type": "string",
+                  "default": true,
+                  "description": "Switch to displaying the image after the text on desktop",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Image description",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "cta-paid"
+        }
+      ]
+    },
+    {
+      "name": "faq",
+      "label": "Faq",
+      "description": "Component used to display a Faq section",
+      "type": "object",
+      "fields": [
+        {
+          "name": "questions",
+          "label": "Questions",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "question",
+                "type": "string",
+                "description": "The question",
+                "required": false
+              },
+              {
+                "name": "answer",
+                "type": "string",
+                "description": "The answer to the question",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "faq"
+        }
+      ]
+    },
+    {
+      "name": "features",
+      "label": "Features",
+      "description": "Component used to display a set of features",
+      "type": "object",
+      "fields": [
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "largeTiles",
+              "value": "largeTiles"
+            },
+            {
+              "label": "smallTiles",
+              "value": "smallTiles"
+            },
+            {
+              "label": "list",
+              "value": "list"
+            }
+          ],
+          "default": "largeTiles",
+          "description": "The layout variant to use for the features",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "enum",
+          "options": [
+            {
+              "label": "intext",
+              "value": "intext"
+            },
+            {
+              "label": "stack",
+              "value": "stack"
+            },
+            {
+              "label": "centered",
+              "value": "centered"
+            },
+            {
+              "label": "besideLarge",
+              "value": "besideLarge"
+            },
+            {
+              "label": "besideSmall",
+              "value": "besideSmall"
+            }
+          ],
+          "default": "stack",
+          "required": false
+        },
+        {
+          "name": "ctas",
+          "label": "Ctas",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "toggle",
+              "type": "string",
+              "default": true,
+              "description": "Activate/disable the CTAs",
+              "required": false
+            },
+            {
+              "name": "style",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "button",
+                  "value": "button"
+                },
+                {
+                  "label": "link",
+                  "value": "link"
+                },
+                {
+                  "label": "intext",
+                  "value": "intext"
+                }
+              ],
+              "default": "link",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "features",
+          "label": "Features",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "The icon for the feature",
+                "required": false
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "description": "The title of the feature",
+                "required": false
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "description": "The description of the feature",
+                "required": false
+              },
+              {
+                "name": "cta",
+                "label": "Cta",
+                "description": "The call to action",
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "target",
+                    "type": "string",
+                    "default": "#",
+                    "description": "The CTA target",
+                    "required": false
+                  },
+                  {
+                    "name": "label",
+                    "type": "string",
+                    "default": "See more",
+                    "description": "The text label displayed on the link",
+                    "required": false
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "features"
+        }
+      ]
+    },
+    {
+      "name": "gallery",
+      "label": "Gallery",
+      "description": "Component used to display a gallery of images",
+      "type": "object",
+      "fields": [
+        {
+          "name": "images",
+          "label": "Images",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "url",
+                "type": "string",
+                "description": "The URL of the image",
+                "required": false
+              },
+              {
+                "name": "alt",
+                "type": "string",
+                "description": "Alt text of the image",
+                "required": false
+              },
+              {
+                "name": "caption",
+                "type": "string",
+                "description": "The caption of the image",
+                "required": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "stack",
+              "value": "stack"
+            },
+            {
+              "label": "smallTiles",
+              "value": "smallTiles"
+            },
+            {
+              "label": "largeTiles",
+              "value": "largeTiles"
+            }
+          ],
+          "description": "The layout of the gallery images",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "gallery"
         }
       ]
     },
@@ -1154,6 +1731,523 @@
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "headline"
+        }
+      ]
+    },
+    {
+      "name": "hero",
+      "label": "Hero",
+      "description": "Hero",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the visual",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "height",
+          "type": "enum",
+          "options": [
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "fullImage",
+              "value": "fullImage"
+            },
+            {
+              "label": "fullScreen",
+              "value": "fullScreen"
+            }
+          ],
+          "default": "default",
+          "description": "Height",
+          "required": false
+        },
+        {
+          "name": "textbox",
+          "type": "string",
+          "default": true,
+          "description": "Toggle wether you want your text to be displayed within in box",
+          "required": false
+        },
+        {
+          "name": "button",
+          "label": "Button",
+          "description": "Component used for user interaction",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Text content to display inside the button",
+                "required": true
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "required": false
+              },
+              {
+                "name": "variant",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "secondary",
+                    "value": "secondary"
+                  },
+                  {
+                    "label": "tertiary",
+                    "value": "tertiary"
+                  }
+                ],
+                "default": "secondary",
+                "description": "Variant of button to be used",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              },
+              {
+                "name": "size",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ],
+                "default": "medium",
+                "description": "Size of button to use",
+                "required": false
+              },
+              {
+                "name": "disabled",
+                "type": "string",
+                "description": "Whether the button should be disabled",
+                "required": false
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "button"
+              }
+            ]
+          }
+        },
+        {
+          "name": "overlay",
+          "type": "string",
+          "description": "Enable grid layer",
+          "required": false
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "description": "Sources of background images for different screen sizes",
+          "type": "object",
+          "fields": [
+            {
+              "name": "srcMobile",
+              "type": "string",
+              "description": "Background image source for small screens",
+              "required": false
+            },
+            {
+              "name": "srcTablet",
+              "type": "string",
+              "description": "Background image source for medium screens",
+              "required": false
+            },
+            {
+              "name": "srcDesktop",
+              "type": "string",
+              "description": "Background image source for large screens",
+              "required": false
+            },
+            {
+              "name": "src",
+              "type": "string",
+              "description": "Override for img tag of picture element, if needed",
+              "required": false
+            },
+            {
+              "name": "indent",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "none",
+                  "value": "none"
+                },
+                {
+                  "label": "left",
+                  "value": "left"
+                },
+                {
+                  "label": "right",
+                  "value": "right"
+                }
+              ],
+              "default": "none",
+              "description": "Choose to indent the image horizontally on small screens",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Alt text to display for picture",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "textPosition",
+          "type": "enum",
+          "options": [
+            {
+              "label": "center",
+              "value": "center"
+            },
+            {
+              "label": "below",
+              "value": "below"
+            },
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "right",
+              "value": "right"
+            }
+          ],
+          "default": "bottom",
+          "description": "Choose the alginment of the module content",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "hero"
+        }
+      ]
+    },
+    {
+      "name": "image_story",
+      "label": "Image Story",
+      "description": "Image Story",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the module element",
+          "required": false
+        },
+        {
+          "name": "largeHeadline",
+          "type": "string",
+          "description": "Make the headline larger",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the module headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Info text for the module element",
+          "required": false
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "textLeft",
+              "value": "textLeft"
+            },
+            {
+              "label": "imageLeft",
+              "value": "imageLeft"
+            }
+          ],
+          "default": "imageLeft",
+          "description": "Choose the layout for the component",
+          "required": false
+        },
+        {
+          "name": "padding",
+          "type": "string",
+          "description": "Give the component padding",
+          "required": false
+        },
+        {
+          "name": "button",
+          "label": "Button",
+          "description": "Component used for user interaction",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Text content to display inside the button",
+                "required": true
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "required": false
+              },
+              {
+                "name": "variant",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "secondary",
+                    "value": "secondary"
+                  },
+                  {
+                    "label": "tertiary",
+                    "value": "tertiary"
+                  }
+                ],
+                "default": "secondary",
+                "description": "Variant of button to be used",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              },
+              {
+                "name": "size",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ],
+                "default": "medium",
+                "description": "Size of button to use",
+                "required": false
+              },
+              {
+                "name": "disabled",
+                "type": "string",
+                "description": "Whether the button should be disabled",
+                "required": false
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "button"
+              }
+            ]
+          }
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "description": "Image displayed alongside the text content",
+          "type": "object",
+          "fields": [
+            {
+              "name": "src",
+              "type": "string",
+              "description": "Image source to use",
+              "required": false
+            },
+            {
+              "name": "ratio",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "4:3",
+                  "value": "VALUE_4_3"
+                },
+                {
+                  "label": "3:2",
+                  "value": "VALUE_3_2"
+                },
+                {
+                  "label": "16:9",
+                  "value": "VALUE_16_9"
+                },
+                {
+                  "label": "1:1",
+                  "value": "VALUE_1_1"
+                },
+                {
+                  "label": "none",
+                  "value": "none"
+                }
+              ],
+              "default": "none",
+              "description": "Select an aspect ratio to use for cropping and displaying the image",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Image description",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "textAlign",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "image-story"
+        }
+      ]
+    },
+    {
+      "name": "image_text",
+      "label": "Image Text",
+      "description": "Component used to display an image beside or above/below a text block",
+      "type": "object",
+      "fields": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text content to display beside the image",
+          "required": true
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "src",
+              "type": "string",
+              "description": "URL of the image to display",
+              "required": false
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "description": "Alt text of the image",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "above",
+              "value": "above"
+            },
+            {
+              "label": "below",
+              "value": "below"
+            },
+            {
+              "label": "beside-right",
+              "value": "beside_right"
+            },
+            {
+              "label": "beside-left",
+              "value": "beside_left"
+            }
+          ],
+          "description": "Position of the image relative to the text",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "image-text"
         }
       ]
     },
@@ -1384,252 +2478,6 @@
       ]
     },
     {
-      "name": "picture",
-      "label": "Picture",
-      "description": "Base component to display a picture",
-      "type": "object",
-      "fields": [
-        {
-          "name": "src",
-          "type": "string",
-          "description": "Picture source",
-          "required": false
-        },
-        {
-          "name": "srcSet",
-          "type": "string",
-          "description": "Use a srcSet to display picture",
-          "required": false
-        },
-        {
-          "name": "alt",
-          "type": "string",
-          "description": "Alt text to display for picture",
-          "required": false
-        },
-        {
-          "name": "width",
-          "type": "string",
-          "description": "Width of the picture",
-          "required": false
-        },
-        {
-          "name": "height",
-          "type": "string",
-          "description": "Height of the picture",
-          "required": false
-        },
-        {
-          "name": "className",
-          "type": "string",
-          "description": "Add additional css classes that should be applied to the button",
-          "required": false
-        },
-        {
-          "name": "style",
-          "type": "string",
-          "description": "Define a style attribute for the picture",
-          "required": false
-        },
-        {
-          "name": "lazy",
-          "type": "string",
-          "default": true,
-          "description": "Load the picture lazily",
-          "required": false
-        },
-        {
-          "name": "sources",
-          "label": "Sources",
-          "description": "",
-          "type": "list",
-          "items": {
-            "type": "object",
-            "fields": [
-              {
-                "name": "srcSet",
-                "type": "string",
-                "description": "Use a srcSet to display picture",
-                "required": false
-              },
-              {
-                "name": "media",
-                "type": "string",
-                "description": "TODO MEDIA DESCRIPTION",
-                "required": false
-              },
-              {
-                "name": "type",
-                "type": "string",
-                "description": "TODO TYPE DESCRIPTION",
-                "required": false
-              }
-            ]
-          }
-        },
-        {
-          "name": "pictureClassName",
-          "type": "string",
-          "description": "Set additional class(es) to the picture",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "picture"
-        }
-      ]
-    },
-    {
-      "name": "pictureText",
-      "label": "PictureText",
-      "description": "Component used to display an image beside or above/below a text block",
-      "type": "object",
-      "fields": [
-        {
-          "name": "text",
-          "type": "string",
-          "description": "Text content to display beside the image",
-          "required": true
-        },
-        {
-          "name": "image",
-          "label": "Image",
-          "description": "",
-          "type": "object",
-          "fields": [
-            {
-              "name": "source",
-              "type": "string",
-              "description": "URL of the image to display",
-              "required": false
-            },
-            {
-              "name": "alt",
-              "type": "string",
-              "description": "Alt text of the image",
-              "required": false
-            }
-          ]
-        },
-        {
-          "name": "layout",
-          "type": "enum",
-          "options": [
-            {
-              "label": "above",
-              "value": "above"
-            },
-            {
-              "label": "below",
-              "value": "below"
-            },
-            {
-              "label": "beside-right",
-              "value": "beside_right"
-            },
-            {
-              "label": "beside-left",
-              "value": "beside_left"
-            }
-          ],
-          "description": "Position of the image relative to the text",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "pictureText"
-        }
-      ]
-    },
-    {
-      "name": "cta",
-      "label": "Cta",
-      "description": "Cta",
-      "type": "object",
-      "fields": [
-        {
-          "name": "headline",
-          "type": "string",
-          "description": "Headline for the module element",
-          "required": false
-        },
-        {
-          "name": "largeHeadline",
-          "type": "string",
-          "description": "Make the headline larger",
-          "required": false
-        },
-        {
-          "name": "sub",
-          "type": "string",
-          "description": "Subheadline below the module headline",
-          "required": false
-        },
-        {
-          "name": "text",
-          "type": "string",
-          "description": "Info text for the module element",
-          "required": false
-        },
-        {
-          "name": "ctas",
-          "label": "Ctas",
-          "description": "",
-          "type": "list",
-          "items": {
-            "type": "object",
-            "fields": [
-              {
-                "name": "label",
-                "type": "string",
-                "description": "Label for the Call to action",
-                "required": false
-              },
-              {
-                "name": "target",
-                "type": "string",
-                "description": "Target for the Call to action",
-                "required": false
-              },
-              {
-                "name": "icon",
-                "type": "string",
-                "description": "Choose an icon",
-                "required": false
-              }
-            ]
-          }
-        },
-        {
-          "name": "align",
-          "type": "enum",
-          "options": [
-            {
-              "label": "left",
-              "value": "left"
-            },
-            {
-              "label": "center",
-              "value": "center"
-            }
-          ],
-          "default": "left",
-          "description": "Choose the alginment of the text",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "cta"
-        }
-      ]
-    },
-    {
       "name": "button",
       "label": "Button",
       "description": "Component used for user interaction",
@@ -1710,199 +2558,6 @@
       ]
     },
     {
-      "name": "hero",
-      "label": "Hero",
-      "description": "Hero",
-      "type": "object",
-      "fields": [
-        {
-          "name": "headline",
-          "type": "string",
-          "description": "Headline for the visual",
-          "required": false
-        },
-        {
-          "name": "largeHeadline",
-          "type": "string",
-          "description": "Make the headline larger",
-          "required": false
-        },
-        {
-          "name": "sub",
-          "type": "string",
-          "description": "Subheadline below the module headline",
-          "required": false
-        },
-        {
-          "name": "text",
-          "type": "string",
-          "description": "Info text for the module element",
-          "required": false
-        },
-        {
-          "name": "height",
-          "type": "enum",
-          "options": [
-            {
-              "label": "small",
-              "value": "small"
-            },
-            {
-              "label": "default",
-              "value": "default"
-            },
-            {
-              "label": "fullImage",
-              "value": "fullImage"
-            },
-            {
-              "label": "fullScreen",
-              "value": "fullScreen"
-            }
-          ],
-          "default": "default",
-          "description": "Height",
-          "required": false
-        },
-        {
-          "name": "textbox",
-          "type": "string",
-          "default": true,
-          "description": "Toggle wether you want your text to be displayed within in box",
-          "required": false
-        },
-        {
-          "name": "cta",
-          "label": "Cta",
-          "description": "",
-          "type": "object",
-          "fields": [
-            {
-              "name": "toggle",
-              "type": "string",
-              "default": true,
-              "description": "Toggle wether the CTA is displayed or not",
-              "required": false
-            },
-            {
-              "name": "label",
-              "type": "string",
-              "description": "Text content to display inside the button",
-              "required": false
-            },
-            {
-              "name": "target",
-              "type": "string",
-              "description": "Target that should be linked, makes the button behave like a link semantically",
-              "required": false
-            },
-            {
-              "name": "icon",
-              "type": "string",
-              "description": "Choose an icon",
-              "required": false
-            }
-          ]
-        },
-        {
-          "name": "overlay",
-          "type": "string",
-          "description": "Enable grid layer",
-          "required": false
-        },
-        {
-          "name": "image",
-          "label": "Image",
-          "description": "Sources of background images for different screen sizes",
-          "type": "object",
-          "fields": [
-            {
-              "name": "srcMobile",
-              "type": "string",
-              "description": "Background image source for small screens",
-              "required": false
-            },
-            {
-              "name": "srcTablet",
-              "type": "string",
-              "description": "Background image source for medium screens",
-              "required": false
-            },
-            {
-              "name": "srcDesktop",
-              "type": "string",
-              "description": "Background image source for large screens",
-              "required": false
-            },
-            {
-              "name": "src",
-              "type": "string",
-              "description": "Override for img tag of picture element, if needed",
-              "required": false
-            },
-            {
-              "name": "indent",
-              "type": "enum",
-              "options": [
-                {
-                  "label": "none",
-                  "value": "none"
-                },
-                {
-                  "label": "left",
-                  "value": "left"
-                },
-                {
-                  "label": "right",
-                  "value": "right"
-                }
-              ],
-              "default": "none",
-              "description": "Choose to indent the image horizontally on small screens",
-              "required": false
-            },
-            {
-              "name": "alt",
-              "type": "string",
-              "description": "Alt text to display for picture",
-              "required": false
-            }
-          ]
-        },
-        {
-          "name": "textPosition",
-          "type": "enum",
-          "options": [
-            {
-              "label": "center",
-              "value": "center"
-            },
-            {
-              "label": "below",
-              "value": "below"
-            },
-            {
-              "label": "left",
-              "value": "left"
-            },
-            {
-              "label": "right",
-              "value": "right"
-            }
-          ],
-          "default": "bottom",
-          "description": "Choose the alginment of the module content",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "hero"
-        }
-      ]
-    },
-    {
       "name": "mosaic",
       "label": "Mosaic",
       "description": "Mosaic",
@@ -1930,6 +2585,12 @@
           "required": false
         },
         {
+          "name": "largeHeadlines",
+          "type": "string",
+          "description": "Make the headlines larger",
+          "required": false
+        },
+        {
           "name": "tiles",
           "label": "Tiles",
           "description": "",
@@ -1940,30 +2601,30 @@
               {
                 "name": "headline",
                 "type": "string",
-                "description": "Headline for the visual",
+                "description": "Headline for the tile",
                 "required": false
               },
               {
                 "name": "sub",
                 "type": "string",
-                "description": "Subheadline below the module headline",
+                "description": "Subheadline below the tile headline",
                 "required": false
               },
               {
                 "name": "text",
                 "type": "string",
-                "description": "Info text for the module element",
+                "description": "Text for tile",
                 "required": false
               },
               {
                 "name": "image",
                 "type": "string",
-                "description": "Info text for the module element",
+                "description": "Image source for the tile",
                 "required": false
               },
               {
-                "name": "cta",
-                "label": "Cta",
+                "name": "button",
+                "label": "Button",
                 "description": "",
                 "type": "object",
                 "fields": [
@@ -1971,7 +2632,7 @@
                     "name": "toggle",
                     "type": "string",
                     "default": true,
-                    "description": "Toggle wether the CTA is displayed or not",
+                    "description": "Toggle wether the Button is displayed or not",
                     "required": false
                   },
                   {
@@ -2016,245 +2677,6 @@
           "default": "mosaic"
         }
       ]
-    },
-    {
-      "name": "section",
-      "label": "Section",
-      "description": "Component used to layout components into pages",
-      "type": "object",
-      "fields": [
-        {
-          "name": "headline",
-          "type": "string",
-          "description": "Headline for the section",
-          "required": false
-        },
-        {
-          "name": "largeHeadline",
-          "type": "string",
-          "description": "Make the headline larger",
-          "required": false
-        },
-        {
-          "name": "sub",
-          "type": "string",
-          "description": "Subheadline for the section",
-          "required": false
-        },
-        {
-          "name": "switchHeadlineOrder",
-          "type": "string",
-          "description": "Switch the order of headline and subheadline",
-          "required": false
-        },
-        {
-          "name": "width",
-          "type": "enum",
-          "options": [
-            {
-              "label": "full",
-              "value": "full"
-            },
-            {
-              "label": "max",
-              "value": "max"
-            },
-            {
-              "label": "wide",
-              "value": "wide"
-            },
-            {
-              "label": "default",
-              "value": "default"
-            },
-            {
-              "label": "narrow",
-              "value": "narrow"
-            }
-          ],
-          "default": "default",
-          "description": "Width of section to use",
-          "required": false
-        },
-        {
-          "name": "gutter",
-          "type": "enum",
-          "options": [
-            {
-              "label": "large",
-              "value": "large"
-            },
-            {
-              "label": "default",
-              "value": "default"
-            },
-            {
-              "label": "small",
-              "value": "small"
-            },
-            {
-              "label": "none",
-              "value": "none"
-            }
-          ],
-          "default": "default",
-          "description": "Size of gutter to use",
-          "required": false
-        },
-        {
-          "name": "mode",
-          "type": "enum",
-          "options": [
-            {
-              "label": "default",
-              "value": "default"
-            },
-            {
-              "label": "tile",
-              "value": "tile"
-            },
-            {
-              "label": "list",
-              "value": "list"
-            }
-          ],
-          "default": "default",
-          "description": "Layout mode used for section contents",
-          "required": false
-        },
-        {
-          "name": "align",
-          "type": "enum",
-          "options": [
-            {
-              "label": "left",
-              "value": "left"
-            },
-            {
-              "label": "center",
-              "value": "center"
-            }
-          ],
-          "default": "left",
-          "description": "Alignment for the section headline and cta's",
-          "required": false
-        },
-        {
-          "name": "style",
-          "type": "enum",
-          "options": [
-            {
-              "label": "default",
-              "value": "default"
-            },
-            {
-              "label": "accent",
-              "value": "accent"
-            },
-            {
-              "label": "bold",
-              "value": "bold"
-            }
-          ],
-          "default": "default",
-          "description": "Style of background",
-          "required": false
-        },
-        {
-          "name": "components",
-          "type": "list",
-          "items": {
-            "type": "model",
-            "models": ["hero", "cta", "mosaic"]
-          },
-          "description": "Component used to layout components into pages",
-          "required": false
-        },
-        {
-          "name": "spaceBefore",
-          "type": "enum",
-          "options": [
-            {
-              "label": "default",
-              "value": "default"
-            },
-            {
-              "label": "small",
-              "value": "small"
-            },
-            {
-              "label": "none",
-              "value": "none"
-            }
-          ],
-          "default": "default",
-          "description": "Amount of spacing before the section",
-          "required": false
-        },
-        {
-          "name": "spaceAfter",
-          "type": "enum",
-          "options": [
-            {
-              "label": "default",
-              "value": "default"
-            },
-            {
-              "label": "small",
-              "value": "small"
-            },
-            {
-              "label": "none",
-              "value": "none"
-            }
-          ],
-          "default": "default",
-          "description": "Amount of spacing after the section",
-          "required": false
-        },
-        {
-          "name": "inverted",
-          "type": "string",
-          "description": "Whether to invert the section",
-          "required": false
-        },
-        {
-          "name": "ctas",
-          "label": "Ctas",
-          "description": "",
-          "type": "list",
-          "items": {
-            "type": "object",
-            "fields": [
-              {
-                "name": "label",
-                "type": "string",
-                "description": "Label for the Call to action",
-                "required": false
-              },
-              {
-                "name": "target",
-                "type": "string",
-                "description": "Target for the Call to action",
-                "required": false
-              },
-              {
-                "name": "icon",
-                "type": "string",
-                "description": "Choose an icon",
-                "required": false
-              }
-            ]
-          }
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "section"
-        }
-      ],
-      "groups": ["Section"]
     },
     {
       "name": "split",
@@ -2400,6 +2822,12 @@
           "required": false
         },
         {
+          "name": "label",
+          "type": "string",
+          "description": "Label for the Teaser Card",
+          "required": false
+        },
+        {
           "name": "target",
           "type": "string",
           "description": "Target that should be linked",
@@ -2409,12 +2837,6 @@
           "name": "image",
           "type": "string",
           "description": "Image to display as cover",
-          "required": false
-        },
-        {
-          "name": "inverted",
-          "type": "string",
-          "description": "Whether to invert the card",
           "required": false
         },
         {
@@ -2567,10 +2989,10 @@
           "name": "text",
           "type": "string",
           "description": "Text",
-          "required": false
+          "required": true
         },
         {
-          "name": "layoutVariant",
+          "name": "layout",
           "type": "enum",
           "options": [
             {
@@ -2587,7 +3009,24 @@
           "required": false
         },
         {
-          "name": "textStyle",
+          "name": "align",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "center",
+          "description": "Alignment of text",
+          "required": false
+        },
+        {
+          "name": "style",
           "type": "enum",
           "options": [
             {
@@ -2626,6 +3065,7 @@
         {
           "name": "largeHeadline",
           "type": "string",
+          "default": true,
           "description": "Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page",
           "required": false
         },
@@ -2642,37 +3082,87 @@
           "required": false
         },
         {
-          "name": "cta",
-          "label": "Cta",
-          "description": "",
-          "type": "object",
-          "fields": [
-            {
-              "name": "toggle",
-              "type": "string",
-              "default": true,
-              "description": "Toggle wether the CTA is displayed or not",
-              "required": false
-            },
-            {
-              "name": "label",
-              "type": "string",
-              "description": "Text content to display inside the button",
-              "required": false
-            },
-            {
-              "name": "target",
-              "type": "string",
-              "description": "Target that should be linked, makes the button behave like a link semantically",
-              "required": false
-            },
-            {
-              "name": "icon",
-              "type": "string",
-              "description": "Choose an icon",
-              "required": false
-            }
-          ]
+          "name": "button",
+          "label": "Button",
+          "description": "Component used for user interaction",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Text content to display inside the button",
+                "required": true
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "required": false
+              },
+              {
+                "name": "variant",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "secondary",
+                    "value": "secondary"
+                  },
+                  {
+                    "label": "tertiary",
+                    "value": "tertiary"
+                  }
+                ],
+                "default": "secondary",
+                "description": "Variant of button to be used",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              },
+              {
+                "name": "size",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ],
+                "default": "medium",
+                "description": "Size of button to use",
+                "required": false
+              },
+              {
+                "name": "disabled",
+                "type": "string",
+                "description": "Whether the button should be disabled",
+                "required": false
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "button"
+              }
+            ]
+          }
         },
         {
           "name": "overlay",
@@ -2707,44 +3197,23 @@
           ]
         },
         {
-          "name": "verticalAlign",
+          "name": "textPosition",
           "type": "enum",
           "options": [
-            {
-              "label": "top",
-              "value": "top"
-            },
             {
               "label": "center",
               "value": "center"
             },
-            {
-              "label": "bottom",
-              "value": "bottom"
-            }
-          ],
-          "default": "left",
-          "description": "Choose the alginment of the module content",
-          "required": false
-        },
-        {
-          "name": "horizontalAlign",
-          "type": "enum",
-          "options": [
             {
               "label": "left",
               "value": "left"
-            },
-            {
-              "label": "center",
-              "value": "center"
             },
             {
               "label": "right",
               "value": "right"
             }
           ],
-          "default": "left",
+          "default": "bottom",
           "description": "Choose the alginment of the module content",
           "required": false
         },
@@ -2753,6 +3222,1009 @@
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "video-curtain"
+        }
+      ]
+    },
+    {
+      "name": "section",
+      "label": "Section",
+      "description": "Component used to layout components into pages",
+      "type": "object",
+      "groups": ["Section"],
+      "fields": [
+        {
+          "name": "width",
+          "type": "enum",
+          "options": [
+            {
+              "label": "full",
+              "value": "full"
+            },
+            {
+              "label": "max",
+              "value": "max"
+            },
+            {
+              "label": "wide",
+              "value": "wide"
+            },
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "narrow",
+              "value": "narrow"
+            }
+          ],
+          "default": "default",
+          "description": "Width of section to use",
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "enum",
+          "options": [
+            {
+              "label": "stagelights",
+              "value": "stagelights"
+            },
+            {
+              "label": "horizontalGradient",
+              "value": "horizontalGradient"
+            },
+            {
+              "label": "verticalGradient",
+              "value": "verticalGradient"
+            },
+            {
+              "label": "accentTransition",
+              "value": "accentTransition"
+            },
+            {
+              "label": "boldTransition",
+              "value": "boldTransition"
+            },
+            {
+              "label": "symmetricGlow",
+              "value": "symmetricGlow"
+            },
+            {
+              "label": "anchorGlow",
+              "value": "anchorGlow"
+            }
+          ],
+          "default": "default",
+          "description": "Style of background",
+          "required": false
+        },
+        {
+          "name": "backgroundColor",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "accent",
+              "value": "accent"
+            },
+            {
+              "label": "bold",
+              "value": "bold"
+            }
+          ],
+          "default": "default",
+          "description": "Color of background",
+          "required": false
+        },
+        {
+          "name": "spaceBefore",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "none",
+              "value": "none"
+            }
+          ],
+          "default": "default",
+          "description": "Amount of spacing before the section",
+          "required": false
+        },
+        {
+          "name": "spaceAfter",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "small",
+              "value": "small"
+            },
+            {
+              "label": "none",
+              "value": "none"
+            }
+          ],
+          "default": "default",
+          "description": "Amount of spacing after the section",
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "string",
+          "description": "Whether to invert the section",
+          "required": false
+        },
+        {
+          "name": "headline",
+          "label": "Headline",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text",
+              "type": "string",
+              "description": "Headline Text for the section",
+              "required": false
+            },
+            {
+              "name": "large",
+              "type": "string",
+              "description": "Make the headline larger",
+              "required": false
+            },
+            {
+              "name": "width",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "unset",
+                  "value": "unset"
+                },
+                {
+                  "label": "narrow",
+                  "value": "narrow"
+                },
+                {
+                  "label": "default",
+                  "value": "default"
+                },
+                {
+                  "label": "wide",
+                  "value": "wide"
+                }
+              ],
+              "default": "unset",
+              "description": "Width of headline to use",
+              "required": false
+            },
+            {
+              "name": "textAlign",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "left",
+                  "value": "left"
+                },
+                {
+                  "label": "center",
+                  "value": "center"
+                },
+                {
+                  "label": "right",
+                  "value": "right"
+                }
+              ],
+              "description": "Choose the text alignment for the headline",
+              "required": false
+            },
+            {
+              "name": "align",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "left",
+                  "value": "left"
+                },
+                {
+                  "label": "center",
+                  "value": "center"
+                },
+                {
+                  "label": "right",
+                  "value": "right"
+                }
+              ],
+              "description": "Choose an alignment for positioning the headline",
+              "required": false
+            },
+            {
+              "name": "sub",
+              "type": "string",
+              "description": "Subheadline for the section",
+              "required": false
+            },
+            {
+              "name": "switchOrder",
+              "type": "string",
+              "description": "Switch the order of headline and subheadline",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "content",
+          "label": "Content",
+          "description": "",
+          "type": "object",
+          "fields": [
+            {
+              "name": "width",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "unset",
+                  "value": "unset"
+                },
+                {
+                  "label": "narrow",
+                  "value": "narrow"
+                },
+                {
+                  "label": "default",
+                  "value": "default"
+                },
+                {
+                  "label": "wide",
+                  "value": "wide"
+                }
+              ],
+              "default": "unset",
+              "description": "Width of content to use",
+              "required": false
+            },
+            {
+              "name": "align",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "left",
+                  "value": "left"
+                },
+                {
+                  "label": "center",
+                  "value": "center"
+                },
+                {
+                  "label": "right",
+                  "value": "right"
+                }
+              ],
+              "default": "center",
+              "description": "Choose an alignment for the content",
+              "required": false
+            },
+            {
+              "name": "gutter",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "large",
+                  "value": "large"
+                },
+                {
+                  "label": "default",
+                  "value": "default"
+                },
+                {
+                  "label": "small",
+                  "value": "small"
+                },
+                {
+                  "label": "none",
+                  "value": "none"
+                }
+              ],
+              "default": "default",
+              "description": "Size of gutter to use",
+              "required": false
+            },
+            {
+              "name": "mode",
+              "type": "enum",
+              "options": [
+                {
+                  "label": "default",
+                  "value": "default"
+                },
+                {
+                  "label": "tile",
+                  "value": "tile"
+                },
+                {
+                  "label": "list",
+                  "value": "list"
+                }
+              ],
+              "default": "default",
+              "description": "Layout mode used for section contents",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "components",
+          "type": "list",
+          "items": {
+            "type": "model",
+            "models": [
+              "hero",
+              "cta",
+              "mosaic",
+              "cta_paid",
+              "faq",
+              "features",
+              "gallery",
+              "headline",
+              "image_story",
+              "split",
+              "stats",
+              "stats_paid",
+              "teaser_card",
+              "testimonials",
+              "testimonials_paid",
+              "text",
+              "video_curtain",
+              "image_text",
+              "logos",
+              "logos_paid"
+            ]
+          },
+          "description": "Component used to layout components into pages",
+          "required": false
+        },
+        {
+          "name": "button",
+          "label": "Button",
+          "description": "Component used for user interaction",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "label",
+                "type": "string",
+                "description": "Text content to display inside the button",
+                "required": true
+              },
+              {
+                "name": "target",
+                "type": "string",
+                "description": "Target that should be linked, makes the button behave like a link semantically",
+                "required": false
+              },
+              {
+                "name": "variant",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "secondary",
+                    "value": "secondary"
+                  },
+                  {
+                    "label": "tertiary",
+                    "value": "tertiary"
+                  }
+                ],
+                "default": "secondary",
+                "description": "Variant of button to be used",
+                "required": false
+              },
+              {
+                "name": "icon",
+                "type": "string",
+                "description": "Choose an icon",
+                "required": false
+              },
+              {
+                "name": "size",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ],
+                "default": "medium",
+                "description": "Size of button to use",
+                "required": false
+              },
+              {
+                "name": "disabled",
+                "type": "string",
+                "description": "Whether the button should be disabled",
+                "required": false
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "button"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "section"
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "label": "Page",
+      "description": "Abstracts a page concept into JSON schema",
+      "type": "object",
+      "fields": [
+        {
+          "name": "layout",
+          "type": "enum",
+          "options": [
+            {
+              "label": "default",
+              "value": "default"
+            },
+            {
+              "label": "content",
+              "value": "content"
+            },
+            {
+              "label": "blog-list",
+              "value": "blog_list"
+            },
+            {
+              "label": "blog-detail",
+              "value": "blog_detail"
+            },
+            {
+              "label": "glossary",
+              "value": "glossary"
+            }
+          ],
+          "default": "default",
+          "description": "Choose a layout for the page",
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "Description used for the page",
+          "required": false
+        },
+        {
+          "name": "keywords",
+          "type": "string",
+          "description": "Keywords used for the page",
+          "required": false
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Preview image used for the page",
+          "required": false
+        },
+        {
+          "name": "cardImage",
+          "type": "string",
+          "description": "Card preview image (larger, e.g. Twitter) used for the page",
+          "required": false
+        },
+        {
+          "name": "section",
+          "label": "Section",
+          "description": "Component used to layout components into pages",
+          "type": "list",
+          "items": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "width",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "full",
+                    "value": "full"
+                  },
+                  {
+                    "label": "max",
+                    "value": "max"
+                  },
+                  {
+                    "label": "wide",
+                    "value": "wide"
+                  },
+                  {
+                    "label": "default",
+                    "value": "default"
+                  },
+                  {
+                    "label": "narrow",
+                    "value": "narrow"
+                  }
+                ],
+                "default": "default",
+                "description": "Width of section to use",
+                "required": false
+              },
+              {
+                "name": "style",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "stagelights",
+                    "value": "stagelights"
+                  },
+                  {
+                    "label": "horizontalGradient",
+                    "value": "horizontalGradient"
+                  },
+                  {
+                    "label": "verticalGradient",
+                    "value": "verticalGradient"
+                  },
+                  {
+                    "label": "accentTransition",
+                    "value": "accentTransition"
+                  },
+                  {
+                    "label": "boldTransition",
+                    "value": "boldTransition"
+                  },
+                  {
+                    "label": "symmetricGlow",
+                    "value": "symmetricGlow"
+                  },
+                  {
+                    "label": "anchorGlow",
+                    "value": "anchorGlow"
+                  }
+                ],
+                "default": "default",
+                "description": "Style of background",
+                "required": false
+              },
+              {
+                "name": "backgroundColor",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "default",
+                    "value": "default"
+                  },
+                  {
+                    "label": "accent",
+                    "value": "accent"
+                  },
+                  {
+                    "label": "bold",
+                    "value": "bold"
+                  }
+                ],
+                "default": "default",
+                "description": "Color of background",
+                "required": false
+              },
+              {
+                "name": "spaceBefore",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "default",
+                    "value": "default"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "none",
+                    "value": "none"
+                  }
+                ],
+                "default": "default",
+                "description": "Amount of spacing before the section",
+                "required": false
+              },
+              {
+                "name": "spaceAfter",
+                "type": "enum",
+                "options": [
+                  {
+                    "label": "default",
+                    "value": "default"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "none",
+                    "value": "none"
+                  }
+                ],
+                "default": "default",
+                "description": "Amount of spacing after the section",
+                "required": false
+              },
+              {
+                "name": "inverted",
+                "type": "string",
+                "description": "Whether to invert the section",
+                "required": false
+              },
+              {
+                "name": "headline",
+                "label": "Headline",
+                "description": "",
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "text",
+                    "type": "string",
+                    "description": "Headline Text for the section",
+                    "required": false
+                  },
+                  {
+                    "name": "large",
+                    "type": "string",
+                    "description": "Make the headline larger",
+                    "required": false
+                  },
+                  {
+                    "name": "width",
+                    "type": "enum",
+                    "options": [
+                      {
+                        "label": "unset",
+                        "value": "unset"
+                      },
+                      {
+                        "label": "narrow",
+                        "value": "narrow"
+                      },
+                      {
+                        "label": "default",
+                        "value": "default"
+                      },
+                      {
+                        "label": "wide",
+                        "value": "wide"
+                      }
+                    ],
+                    "default": "unset",
+                    "description": "Width of headline to use",
+                    "required": false
+                  },
+                  {
+                    "name": "textAlign",
+                    "type": "enum",
+                    "options": [
+                      {
+                        "label": "left",
+                        "value": "left"
+                      },
+                      {
+                        "label": "center",
+                        "value": "center"
+                      },
+                      {
+                        "label": "right",
+                        "value": "right"
+                      }
+                    ],
+                    "description": "Choose the text alignment for the headline",
+                    "required": false
+                  },
+                  {
+                    "name": "align",
+                    "type": "enum",
+                    "options": [
+                      {
+                        "label": "left",
+                        "value": "left"
+                      },
+                      {
+                        "label": "center",
+                        "value": "center"
+                      },
+                      {
+                        "label": "right",
+                        "value": "right"
+                      }
+                    ],
+                    "description": "Choose an alignment for positioning the headline",
+                    "required": false
+                  },
+                  {
+                    "name": "sub",
+                    "type": "string",
+                    "description": "Subheadline for the section",
+                    "required": false
+                  },
+                  {
+                    "name": "switchOrder",
+                    "type": "string",
+                    "description": "Switch the order of headline and subheadline",
+                    "required": false
+                  }
+                ]
+              },
+              {
+                "name": "content",
+                "label": "Content",
+                "description": "",
+                "type": "object",
+                "fields": [
+                  {
+                    "name": "width",
+                    "type": "enum",
+                    "options": [
+                      {
+                        "label": "unset",
+                        "value": "unset"
+                      },
+                      {
+                        "label": "narrow",
+                        "value": "narrow"
+                      },
+                      {
+                        "label": "default",
+                        "value": "default"
+                      },
+                      {
+                        "label": "wide",
+                        "value": "wide"
+                      }
+                    ],
+                    "default": "unset",
+                    "description": "Width of content to use",
+                    "required": false
+                  },
+                  {
+                    "name": "align",
+                    "type": "enum",
+                    "options": [
+                      {
+                        "label": "left",
+                        "value": "left"
+                      },
+                      {
+                        "label": "center",
+                        "value": "center"
+                      },
+                      {
+                        "label": "right",
+                        "value": "right"
+                      }
+                    ],
+                    "default": "center",
+                    "description": "Choose an alignment for the content",
+                    "required": false
+                  },
+                  {
+                    "name": "gutter",
+                    "type": "enum",
+                    "options": [
+                      {
+                        "label": "large",
+                        "value": "large"
+                      },
+                      {
+                        "label": "default",
+                        "value": "default"
+                      },
+                      {
+                        "label": "small",
+                        "value": "small"
+                      },
+                      {
+                        "label": "none",
+                        "value": "none"
+                      }
+                    ],
+                    "default": "default",
+                    "description": "Size of gutter to use",
+                    "required": false
+                  },
+                  {
+                    "name": "mode",
+                    "type": "enum",
+                    "options": [
+                      {
+                        "label": "default",
+                        "value": "default"
+                      },
+                      {
+                        "label": "tile",
+                        "value": "tile"
+                      },
+                      {
+                        "label": "list",
+                        "value": "list"
+                      }
+                    ],
+                    "default": "default",
+                    "description": "Layout mode used for section contents",
+                    "required": false
+                  }
+                ]
+              },
+              {
+                "name": "components",
+                "type": "list",
+                "items": {
+                  "type": "model",
+                  "models": [
+                    "hero",
+                    "cta",
+                    "mosaic",
+                    "cta_paid",
+                    "faq",
+                    "features",
+                    "gallery",
+                    "headline",
+                    "image_story",
+                    "split",
+                    "stats",
+                    "stats_paid",
+                    "teaser_card",
+                    "testimonials",
+                    "testimonials_paid",
+                    "text",
+                    "video_curtain",
+                    "image_text",
+                    "logos",
+                    "logos_paid"
+                  ]
+                },
+                "description": "Component used to layout components into pages",
+                "required": false
+              },
+              {
+                "name": "button",
+                "label": "Button",
+                "description": "Component used for user interaction",
+                "type": "list",
+                "items": {
+                  "type": "object",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "type": "string",
+                      "description": "Text content to display inside the button",
+                      "required": true
+                    },
+                    {
+                      "name": "target",
+                      "type": "string",
+                      "description": "Target that should be linked, makes the button behave like a link semantically",
+                      "required": false
+                    },
+                    {
+                      "name": "variant",
+                      "type": "enum",
+                      "options": [
+                        {
+                          "label": "primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "secondary",
+                          "value": "secondary"
+                        },
+                        {
+                          "label": "tertiary",
+                          "value": "tertiary"
+                        }
+                      ],
+                      "default": "secondary",
+                      "description": "Variant of button to be used",
+                      "required": false
+                    },
+                    {
+                      "name": "icon",
+                      "type": "string",
+                      "description": "Choose an icon",
+                      "required": false
+                    },
+                    {
+                      "name": "size",
+                      "type": "enum",
+                      "options": [
+                        {
+                          "label": "small",
+                          "value": "small"
+                        },
+                        {
+                          "label": "medium",
+                          "value": "medium"
+                        },
+                        {
+                          "label": "large",
+                          "value": "large"
+                        }
+                      ],
+                      "default": "medium",
+                      "description": "Size of button to use",
+                      "required": false
+                    },
+                    {
+                      "name": "disabled",
+                      "type": "string",
+                      "description": "Whether the button should be disabled",
+                      "required": false
+                    },
+                    {
+                      "name": "Type",
+                      "type": "text",
+                      "description": "Internal type for interface resolution",
+                      "default": "button"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "Type",
+                "type": "text",
+                "description": "Internal type for interface resolution",
+                "default": "section"
+              }
+            ]
+          }
+        },
+        {
+          "name": "updated",
+          "type": "string",
+          "description": "Last update date for the page",
+          "required": false
+        },
+        {
+          "name": "created",
+          "type": "string",
+          "description": "Creation date for the page",
+          "required": false
+        },
+        {
+          "name": "Type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "page"
         }
       ]
     }

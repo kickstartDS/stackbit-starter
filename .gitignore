@@ -40,3 +40,7 @@ next-env.d.ts
 # stackbit
 .stackbit/cache
 .cache
+
+# static, copied assets
+public/*
+!public/.keep

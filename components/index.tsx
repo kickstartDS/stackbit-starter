@@ -47,7 +47,7 @@ export const components = {
   mosaic: dynamic(() =>
     import("@kickstartds/ds-agency/mosaic").then((mod) => mod.Mosaic)
   ),
-  "cta-paid": dynamic(() =>
+  cta_paid: dynamic(() =>
     import("@kickstartds/ds-agency/cta-paid").then((mod) => mod.CtaPaid)
   ),
   faq: dynamic(() =>
@@ -62,7 +62,7 @@ export const components = {
   headline: dynamic(() =>
     import("@kickstartds/ds-agency/headline").then((mod) => mod.Headline)
   ),
-  "image-story": dynamic(() =>
+  image_story: dynamic(() =>
     import("@kickstartds/ds-agency/image-story").then((mod) => mod.ImageStory)
   ),
   split: dynamic(() =>
@@ -71,10 +71,10 @@ export const components = {
   stats: dynamic(() =>
     import("@kickstartds/ds-agency/stats").then((mod) => mod.Stats)
   ),
-  "stats-paid": dynamic(() =>
+  stats_paid: dynamic(() =>
     import("@kickstartds/ds-agency/stats-paid").then((mod) => mod.StatsPaid)
   ),
-  "teaser-card": dynamic(() =>
+  teaser_card: dynamic(() =>
     import("@kickstartds/ds-agency/teaser-card").then((mod) => mod.TeaserCard)
   ),
   testimonials: dynamic(() =>
@@ -82,7 +82,7 @@ export const components = {
       (mod) => mod.Testimonials
     )
   ),
-  "testimonials-paid": dynamic(() =>
+  testimonials_paid: dynamic(() =>
     import("@kickstartds/ds-agency/testimonials-paid").then(
       (mod) => mod.TestimonialsPaid
     )
@@ -90,18 +90,18 @@ export const components = {
   text: dynamic(() =>
     import("@kickstartds/ds-agency/text").then((mod) => mod.Text)
   ),
-  "video-curtain": dynamic(() =>
+  video_curtain: dynamic(() =>
     import("@kickstartds/ds-agency/video-curtain").then(
       (mod) => mod.VideoCurtain
     )
   ),
-  "image-text": dynamic(() =>
+  image_text: dynamic(() =>
     import("@kickstartds/ds-agency/image-text").then((mod) => mod.ImageText)
   ),
   logos: dynamic(() =>
     import("@kickstartds/ds-agency/logos").then((mod) => mod.Logos)
   ),
-  "logos-paid": dynamic(() =>
+  logos_paid: dynamic(() =>
     import("@kickstartds/ds-agency/logos-paid").then((mod) => mod.LogosPaid)
   ),
   page: dynamic(() => import("./Page")),

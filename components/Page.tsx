@@ -10,12 +10,11 @@ type ComponentProps = PageComponentProps & PageLayout;
 
 const Component: React.FC<ComponentProps> = (props) => {
   const { global, ...page } = props;
-  const { title, sections = [] } = page;
+  const { sections = [] } = page;
 
   return (
     <BaseLayout {...props}>
       <main id="main">
-        {title && <h1>{title}</h1>}
         {sections && sections.length > 0 && (
           <div>
             {sections.map((section, index) => {
