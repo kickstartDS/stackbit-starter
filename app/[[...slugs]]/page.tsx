@@ -17,7 +17,6 @@ async function fetchData(slug: string) {
   const allData = allContent();
   const urlPath = "/" + slug;
   const props = resolveStaticProps(urlPath, allData);
-  console.log(allData, urlPath, props);
   return { props };
 }
 

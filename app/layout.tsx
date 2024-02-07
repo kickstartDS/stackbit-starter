@@ -7,14 +7,13 @@ import { Section as DsaSection } from "@kickstartds/ds-agency/section";
 import { SectionContext } from "@kickstartds/base/lib/section";
 
 import "@/helpers/client";
-import { ComponentProps, FC, PropsWithChildren } from "react";
+import { ComponentProps, FC, PropsWithChildren, useContext } from "react";
 import { DynamicComponent } from "@/components";
 
 const Section: React.FC<React.PropsWithChildren> = (
   props: ComponentProps<typeof DsaSection>
 ) => {
   const { components, ...rest } = props;
-  console.log("components", components, rest);
   return (
     <DsaSection {...rest}>
       {components?.map((component: any, index: number) => (
@@ -33,7 +32,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log("children", children);
   return (
     <html>
       <body>

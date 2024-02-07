@@ -3,93 +3,50 @@
   "favicon": "/images/favicon.svg",
   "header": {
     "type": "Header",
-    "headerVariant": "variant-c",
-    "isSticky": false,
-    "title": "Personal",
-    "isTitleVisible": true,
-    "primaryLinks": [
+    "logo": {
+      "src": "/logo.svg",
+      "srcMobile": "/public/logo.svg",
+      "srcTablet": "/public/logo.svg",
+      "srcDesktop": "/public/logo.svg"
+    },
+    "floating": true,
+    "navItems": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about-us" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Showcases", "href": "/showcases" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Disclaimer", "href": "/disclaimer" },
       {
-        "type": "Link",
-        "label": "Info",
-        "url": "/info"
-      },
-      {
-        "type": "Link",
-        "label": "Projects",
-        "url": "/projects"
-      },
-      {
-        "type": "Link",
-        "label": "Blog",
-        "url": "/blog"
+        "label": "Storybook",
+        "href": "https://main--64f08cbba622af835d382b4f.chromatic.com/"
       }
-    ],
-    "socialLinks": [
-      {
-        "type": "Social",
-        "altText": "Twitter",
-        "label": "Twitter",
-        "url": "https://twitter.com/netlify",
-        "icon": "twitter"
-      },
-      {
-        "type": "Social",
-        "altText": "GitHub",
-        "label": "GitHub",
-        "url": "https://github.com/stackbit-themes",
-        "icon": "github"
-      }
-    ],
-    "styles": {
-      "self": {
-        "width": "full"
-      }
-    }
+    ]
   },
   "footer": {
     "type": "Footer",
-    "primaryLinks": [
-      {
-        "type": "Link",
-        "label": "Info",
-        "url": "/info",
-        "altText": ""
-      },
-      {
-        "type": "Link",
-        "label": "Contact",
-        "url": "mailto:thisismyemail.@myemail.me",
-        "altText": ""
-      },
-      {
-        "type": "Link",
-        "label": "Blog",
-        "url": "/blog",
-        "altText": ""
-      },
-      {
-        "type": "Link",
-        "label": "GitHub",
-        "url": "https://github.com/stackbit-themes",
-        "altText": ""
-      }
-    ],
-    "contacts": {
-      "type": "ContactBlock",
-      "title": "Contact details",
-      "phoneNumber": "850-123-5021",
-      "phoneAltText": "My phone number",
-      "email": "thisismyemail.@myemail.me",
-      "emailAltText": "My email",
-      "address": "312 Lovely Street, Brooklyn, NY, 123456",
-      "addressAltText": "My address"
+    "logo": {
+      "src": "/logo.svg",
+      "srcMobile": "/public/logo.svg",
+      "srcTablet": "/public/logo.svg",
+      "srcDesktop": "/public/logo.svg"
     },
-    "copyrightText": "Powered by [Netlify Create](https://www.netlify.com/platform/create/)",
-    "styles": {
-      "self": {
-        "width": "narrow",
-        "padding": ["pt-16", "pb-16", "pr-4", "pl-4"]
-      }
-    }
+    "navItems": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about-us" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Showcases", "href": "/showcases" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Disclaimer", "href": "/disclaimer" },
+      {
+        "label": "Storybook",
+        "href": "https://main--64f08cbba622af835d382b4f.chromatic.com/"
+      },
+      { "label": "Home-Paid", "href": "/index_paid" },
+      { "label": "About-Paid", "href": "/about-us_paid" },
+      { "label": "Services-Paid", "href": "/services_paid" },
+      { "label": "Showcases-Paid", "href": "/showcases_paid" },
+      { "label": "Disclaimer-Paid", "href": "/disclaimer_paid" }
+    ]
   }
 }
