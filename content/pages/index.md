@@ -4,15 +4,16 @@ type: page
 sections:
   - type: section
     width: default
-    gutter: large
-    mode: list
+    gutter: default
+    mode: default
     style: default
     spaceBefore: default
     spaceAfter: default
-    headline: Test
+    headline:
+      text: Another headline
+      sub: Subheadline
     content:
       align: left
-      mode: list
     components:
       - type: cta
         align: left
@@ -25,8 +26,8 @@ sections:
             variant: secondary
             size: medium
             Type: button
-            target: '#'
-            disabled: 'false'
+            target: "#"
+            disabled: "false"
       - type: hero
         height: default
         textbox: true
@@ -51,7 +52,7 @@ sections:
           - title: Title 1
             text: Text 1
             cta:
-              target: '#'
+              target: "#"
               label: See more
           - title: Title 2
             text: Text 2
@@ -73,14 +74,14 @@ sections:
         Type: teaser-card
         text: Teaser 1
         label: Label 1
-        target: '#'
+        target: "#"
         headline: Headline 1
       - type: teaser_card
         Type: teaser-card
         headline: Headline 2
         text: Teaser 2
         label: Label 2
-        target: '#'
+        target: "#"
       - type: testimonials
         Type: testimonials
         testimonials:
