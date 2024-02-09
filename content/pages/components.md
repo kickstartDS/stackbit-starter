@@ -15,9 +15,11 @@ sections:
       gutter: default
       mode: list
     components:
-      - type: cta_paid
+      - type: cta
         align: left
-        Type: cta-paid
-        headline: The Sanity & Next.js Experts
-        backgroundColor: ''
+        Type: cta
+        headline: Lorem Ipsum
+        backgroundColor: ""
+    headline:
+      width: narrow
 ---

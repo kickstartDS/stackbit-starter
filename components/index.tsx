@@ -37,42 +37,59 @@ export const DynamicComponent: React.FC<DynamicComponentProps> = (props) => {
 };
 
 export const components = {
+  page: dynamic(() => import("./Page")),
+  blog_overview: dynamic(() => import("./BlogOverview")),
+  blog_post: dynamic(() => import("./BlogPost")),
+  blog_teaser: dynamic(() =>
+    import("@kickstartds/ds-agency/blog-teaser").then(
+      (mod) => mod.BlogTeaserContextDefault
+    )
+  ),
+  blog_aside: dynamic(() =>
+    import("@kickstartds/ds-agency/blog-aside").then(
+      (mod) => mod.BlogAsideContextDefault
+    )
+  ),
+  blog_head: dynamic(() =>
+    import("@kickstartds/ds-agency/blog-head").then(
+      (mod) => mod.BlogHeadContextDefault
+    )
+  ),
   section: Section,
-  hero: dynamic(() =>
-    import("@kickstartds/ds-agency/hero").then((mod) => mod.Hero)
-  ),
   cta: dynamic(() =>
-    import("@kickstartds/ds-agency/cta").then((mod) => mod.Cta)
-  ),
-  mosaic: dynamic(() =>
-    import("@kickstartds/ds-agency/mosaic").then((mod) => mod.Mosaic)
-  ),
-  cta_paid: dynamic(() =>
-    import("@kickstartds/ds-agency/cta-paid").then((mod) => mod.CtaPaid)
+    import("@kickstartds/ds-agency/cta").then((mod) => mod.CtaContextDefault)
   ),
   faq: dynamic(() =>
-    import("@kickstartds/ds-agency/faq").then((mod) => mod.Faq)
+    import("@kickstartds/ds-agency/faq").then((mod) => mod.FaqContextDefault)
   ),
   features: dynamic(() =>
-    import("@kickstartds/ds-agency/features").then((mod) => mod.Features)
+    import("@kickstartds/ds-agency/features").then(
+      (mod) => mod.FeaturesContextDefault
+    )
+  ),
+  feature: dynamic(() =>
+    import("@kickstartds/ds-agency/feature").then(
+      (mod) => mod.FeatureContextDefault
+    )
   ),
   gallery: dynamic(() =>
-    import("@kickstartds/ds-agency/gallery").then((mod) => mod.Gallery)
+    import("@kickstartds/ds-agency/gallery").then(
+      (mod) => mod.GalleryContextDefault
+    )
   ),
   headline: dynamic(() =>
     import("@kickstartds/ds-agency/headline").then((mod) => mod.Headline)
-  ),
-  image_story: dynamic(() =>
-    import("@kickstartds/ds-agency/image-story").then((mod) => mod.ImageStory)
   ),
   split: dynamic(() =>
     import("@kickstartds/ds-agency/split").then((mod) => mod.Split)
   ),
   stats: dynamic(() =>
-    import("@kickstartds/ds-agency/stats").then((mod) => mod.Stats)
+    import("@kickstartds/ds-agency/stats").then(
+      (mod) => mod.StatsContextDefault
+    )
   ),
-  stats_paid: dynamic(() =>
-    import("@kickstartds/ds-agency/stats-paid").then((mod) => mod.StatsPaid)
+  stat: dynamic(() =>
+    import("@kickstartds/ds-agency/stat").then((mod) => mod.StatContextDefault)
   ),
   teaser_card: dynamic(() =>
     import("@kickstartds/ds-agency/teaser-card").then((mod) => mod.TeaserCard)
@@ -82,27 +99,25 @@ export const components = {
       (mod) => mod.Testimonials
     )
   ),
-  testimonials_paid: dynamic(() =>
-    import("@kickstartds/ds-agency/testimonials-paid").then(
-      (mod) => mod.TestimonialsPaid
+  testimonial: dynamic(() =>
+    import("@kickstartds/ds-agency/testimonial").then(
+      (mod) => mod.TestimonialContextDefault
     )
   ),
   text: dynamic(() =>
-    import("@kickstartds/ds-agency/text").then((mod) => mod.Text)
-  ),
-  video_curtain: dynamic(() =>
-    import("@kickstartds/ds-agency/video-curtain").then(
-      (mod) => mod.VideoCurtain
-    )
+    import("@kickstartds/ds-agency/text").then((mod) => mod.TextContextDefault)
   ),
   image_text: dynamic(() =>
-    import("@kickstartds/ds-agency/image-text").then((mod) => mod.ImageText)
+    import("@kickstartds/ds-agency/image-text").then(
+      (mod) => mod.ImageTextContextDefault
+    )
   ),
   logos: dynamic(() =>
-    import("@kickstartds/ds-agency/logos").then((mod) => mod.Logos)
+    import("@kickstartds/ds-agency/logos").then(
+      (mod) => mod.LogosContextDefault
+    )
   ),
-  logos_paid: dynamic(() =>
-    import("@kickstartds/ds-agency/logos-paid").then((mod) => mod.LogosPaid)
+  logo: dynamic(() =>
+    import("@kickstartds/ds-agency/logo").then((mod) => mod.LogoContextDefault)
   ),
-  page: dynamic(() => import("./Page")),
 };

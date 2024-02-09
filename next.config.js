@@ -6,6 +6,13 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
+  transpilePackages: [
+    "@kickstartds/base",
+    "@kickstartds/blog",
+    "@kickstartds/core",
+    "@kickstartds/form",
+    "@kickstartds/ds-agency",
+  ],
 };
 
 module.exports = nextConfig;

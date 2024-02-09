@@ -7,8 +7,10 @@ import { Section as DsaSection } from "@kickstartds/ds-agency/section";
 import { SectionContext } from "@kickstartds/base/lib/section";
 
 import "@/helpers/client";
-import { ComponentProps, FC, PropsWithChildren, useContext } from "react";
+import { ComponentProps, FC, PropsWithChildren } from "react";
 import { DynamicComponent } from "@/components";
+import { AppProps } from "next/app";
+import { NextPage } from "next";
 
 const Section: React.FC<React.PropsWithChildren> = (
   props: ComponentProps<typeof DsaSection>
@@ -28,18 +30,17 @@ const SectionProvider: FC<PropsWithChildren<any>> = (props) => {
 };
 
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
+  Component,
+  pageProps,
+}: AppProps & {
+  Component: NextPage;
 }) {
   return (
-    <html>
-      <body>
-        <IconSprite />
-        <DsaProviders>
-          <SectionProvider>{children}</SectionProvider>
-        </DsaProviders>
-      </body>
-    </html>
+    <DsaProviders>
+      <IconSprite />
+      <SectionProvider>
+        <Component {...pageProps} />
+      </SectionProvider>
+    </DsaProviders>
   );
 }
