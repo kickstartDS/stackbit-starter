@@ -2,93 +2,115 @@ import { BaseContentObject } from "./base";
 
 import { Header as DsaHeader } from "@kickstartds/ds-agency/header";
 import { Footer as DsaFooter } from "@kickstartds/ds-agency/footer";
+
+import { BlogTeaser as DsaBlogTeaser } from "@kickstartds/ds-agency/blog-teaser";
+import { BlogAside as DsaBlogAside } from "@kickstartds/ds-agency/blog-aside";
+import { BlogHead as DsaBlogHead } from "@kickstartds/ds-agency/blog-head";
+
 import { Section as DsaSection } from "@kickstartds/ds-agency/section";
 
-import { Hero as DsaHero } from "@kickstartds/ds-agency/hero";
 import { Cta as DsaCta } from "@kickstartds/ds-agency/cta";
-import { Mosaic as DsaMosaic } from "@kickstartds/ds-agency/mosaic";
-import { CtaPaid as DsaCtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { Faq as DsaFaq } from "@kickstartds/ds-agency/faq";
-import { ImageStory as DsaImageStory } from "@kickstartds/ds-agency/image-story";
-import { Split as DsaSplit } from "@kickstartds/ds-agency/split";
-import { Stats as DsaStats } from "@kickstartds/ds-agency/stats";
-import { StatsPaid as DsaStatsPaid } from "@kickstartds/ds-agency/stats-paid";
 import { Features as DsaFeatures } from "@kickstartds/ds-agency/features";
+import { Feature as DsaFeature } from "@kickstartds/ds-agency/feature";
 import { Gallery as DsaGallery } from "@kickstartds/ds-agency/gallery";
 import { Headline as DsaHeadline } from "@kickstartds/ds-agency/headline";
+import { Split as DsaSplit } from "@kickstartds/ds-agency/split";
+import { Stats as DsaStats } from "@kickstartds/ds-agency/stats";
+import { Stat as DsaStat } from "@kickstartds/ds-agency/stat";
 import { TeaserCard as DsaTeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Testimonials as DsaTestimonials } from "@kickstartds/ds-agency/testimonials";
-import { TestimonialsPaid as DsaTestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
+import { Testimonial as DsaTestimonial } from "@kickstartds/ds-agency/testimonial";
 import { Text as DsaText } from "@kickstartds/ds-agency/text";
-import { VideoCurtain as DsaVideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { ImageText as DsaImageText } from "@kickstartds/ds-agency/image-text";
 import { Logos as DsaLogos } from "@kickstartds/ds-agency/logos";
-import { LogosPaid as DsaLogosPaid } from "@kickstartds/ds-agency/logos-paid";
+import { Logo as DsaLogo } from "@kickstartds/ds-agency/logo";
 
 export type PageModelType = PageLayout;
 
-export const PAGE_MODEL_NAMES = ["page"];
+export const PAGE_MODEL_NAMES = ["page", "blog_overview", "blog_post"];
 
 export type SectionModels = Section;
 
 export type ContentObject =
   | PageLayout
+  | BlogOverviewLayout
+  | BlogPostLayout
+  | BlogTeaser
+  | BlogAside
+  | BlogHead
   | Section
-  | Hero
   | Cta
-  | Mosaic
-  | CtaPaid
   | Faq
-  | ImageStory
-  | Split
-  | Stats
-  | StatsPaid
   | Features
+  | Feature
   | Gallery
   | Headline
+  | Split
+  | Stats
+  | Stat
   | TeaserCard
   | Testimonials
-  | TestimonialsPaid
+  | Testimonial
   | Text
-  | VideoCurtain
   | ImageText
   | Logos
-  | LogosPaid;
+  | Logo;
 
 export type ContentObjectType =
   | "page"
+  | "blog_overview"
+  | "blog_post"
+  | "blog_teaser"
+  | "blog_aside"
+  | "blog_head"
   | "section"
-  | "hero"
   | "cta"
-  | "mosaic"
-  | "cta_paid"
   | "faq"
-  | "image_story"
-  | "split"
-  | "stats"
-  | "stats_paid"
   | "features"
+  | "feature"
   | "gallery"
   | "headline"
+  | "split"
+  | "stats"
+  | "stat"
   | "teaser_card"
   | "testimonials"
-  | "testimonials_paid"
+  | "testimonial"
   | "text"
-  | "video_curtain"
   | "image_text"
   | "logos"
-  | "logos_paid";
+  | "logo";
 
 export type PageLayout = BaseContentObject & {
   type: "page";
   title: string;
   sections?: SectionModels[];
-  metaTitle?: string;
-  metaDescription?: string;
-  addTitleSuffix?: boolean;
-  socialImage?: string;
-  metaTags?: MetaTag[];
-  colors?: "colors-a" | "colors-b" | "colors-c" | "colors-d" | "colors-e";
+  // metaTitle?: string;
+  // metaDescription?: string;
+  // addTitleSuffix?: boolean;
+  // socialImage?: string;
+  // metaTags?: MetaTag[];
+};
+
+export type BlogOverviewLayout = BaseContentObject & {
+  type: "page";
+  title: string;
+  latest?: BlogTeaser;
+  more?: BlogTeaser[];
+  // seo?: Seo;
+  sections?: SectionModels[];
+};
+
+export type BlogPostLayout = BaseContentObject & {
+  type: "page";
+  title: string;
+  head?: BlogTeaser;
+  aside?: BlogAside;
+  content?: string;
+  cta?: Cta;
+  // seo?: ;
+  sections?: SectionModels[];
 };
 
 export type Config = BaseContentObject & {
@@ -130,48 +152,47 @@ export type Header = BaseContentObject &
 export type Footer = BaseContentObject &
   React.ComponentProps<typeof DsaFooter> & { type: "footer" };
 
+export type BlogTeaser = BaseContentObject &
+  React.ComponentProps<typeof DsaBlogTeaser> & { type: "blog_teaser" };
+export type BlogAside = BaseContentObject &
+  React.ComponentProps<typeof DsaBlogAside> & { type: "blog_aside" };
+export type BlogHead = BaseContentObject &
+  React.ComponentProps<typeof DsaBlogHead> & { type: "blog_head" };
+
 export type Section = BaseContentObject &
   React.ComponentProps<typeof DsaSection> & { type: "section" };
 
-export type Hero = BaseContentObject &
-  React.ComponentProps<typeof DsaHero> & { type: "hero" };
 export type Cta = BaseContentObject &
   React.ComponentProps<typeof DsaCta> & { type: "cta" };
-export type Mosaic = BaseContentObject &
-  React.ComponentProps<typeof DsaMosaic> & { type: "mosaic" };
-export type CtaPaid = BaseContentObject &
-  React.ComponentProps<typeof DsaCtaPaid> & { type: "cta_paid" };
 export type Faq = BaseContentObject &
   React.ComponentProps<typeof DsaFaq> & { type: "faq" };
-export type ImageStory = BaseContentObject &
-  React.ComponentProps<typeof DsaImageStory> & { type: "image_story" };
-export type Split = BaseContentObject &
-  React.ComponentProps<typeof DsaSplit> & { type: "split" };
-export type Stats = BaseContentObject &
-  React.ComponentProps<typeof DsaStats> & { type: "stats" };
-export type StatsPaid = BaseContentObject &
-  React.ComponentProps<typeof DsaStatsPaid> & { type: "stats_paid" };
 export type Features = BaseContentObject &
   React.ComponentProps<typeof DsaFeatures> & { type: "features" };
+export type Feature = BaseContentObject &
+  React.ComponentProps<typeof DsaFeature> & { type: "feature" };
 export type Gallery = BaseContentObject &
   React.ComponentProps<typeof DsaGallery> & { type: "gallery" };
 export type Headline = BaseContentObject &
   React.ComponentProps<typeof DsaHeadline> & { type: "headline" };
+export type Split = BaseContentObject &
+  React.ComponentProps<typeof DsaSplit> & { type: "split" };
+export type Stats = BaseContentObject &
+  React.ComponentProps<typeof DsaStats> & { type: "stats" };
+export type Stat = BaseContentObject &
+  React.ComponentProps<typeof DsaStat> & { type: "stat" };
 export type TeaserCard = BaseContentObject &
   React.ComponentProps<typeof DsaTeaserCard> & { type: "teaser_card" };
 export type Testimonials = BaseContentObject &
   React.ComponentProps<typeof DsaTestimonials> & { type: "testimonials" };
-export type TestimonialsPaid = BaseContentObject &
-  React.ComponentProps<typeof DsaTestimonialsPaid> & {
-    type: "testimonials_paid";
+export type Testimonial = BaseContentObject &
+  React.ComponentProps<typeof DsaTestimonial> & {
+    type: "testimonial";
   };
 export type Text = BaseContentObject &
   React.ComponentProps<typeof DsaText> & { type: "text" };
-export type VideoCurtain = BaseContentObject &
-  React.ComponentProps<typeof DsaVideoCurtain> & { type: "video_curtain" };
 export type ImageText = BaseContentObject &
   React.ComponentProps<typeof DsaImageText> & { type: "image_text" };
 export type Logos = BaseContentObject &
   React.ComponentProps<typeof DsaLogos> & { type: "logos" };
-export type LogosPaid = BaseContentObject &
-  React.ComponentProps<typeof DsaLogosPaid> & { type: "logos_paid" };
+export type Logo = BaseContentObject &
+  React.ComponentProps<typeof DsaLogo> & { type: "logo" };

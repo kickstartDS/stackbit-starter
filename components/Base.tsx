@@ -26,7 +26,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
   const metaDescription = seoGenerateMetaDescription(page, site);
   return (
     <Annotated content={page}>
-      <div className={classNames("sb-page", page?.colors || "colors-a")}>
+      <div className={classNames("sb-page", "colors-a")}>
         <div className="sb-base sb-default-base-layout relative">
           <Head>
             <title>{title}</title>
