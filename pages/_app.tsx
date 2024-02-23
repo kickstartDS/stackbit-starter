@@ -5,6 +5,7 @@ import IconSprite from "@kickstartds/ds-agency/icon-sprite";
 import DsaProviders from "@kickstartds/ds-agency/providers";
 import { Section as DsaSection } from "@kickstartds/ds-agency/section";
 import { SectionContext } from "@kickstartds/base/lib/section";
+import StackbitProviders from "../components/Providers";
 
 import "@/helpers/client";
 import { ComponentProps, FC, PropsWithChildren } from "react";
@@ -37,10 +38,12 @@ export default function RootLayout({
 }) {
   return (
     <DsaProviders>
-      <IconSprite />
-      <SectionProvider>
-        <Component {...pageProps} />
-      </SectionProvider>
+      <StackbitProviders>
+        <IconSprite />
+        <SectionProvider>
+          <Component {...pageProps} />
+        </SectionProvider>
+      </StackbitProviders>
     </DsaProviders>
   );
 }

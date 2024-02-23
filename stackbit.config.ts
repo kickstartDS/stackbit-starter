@@ -24,8 +24,7 @@ const config = defineStackbitConfig({
             label: "Sections",
             items: {
               type: "model",
-              models: [],
-              groups: ["Section"],
+              models: ["section"],
             },
           },
         ],

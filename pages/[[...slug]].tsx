@@ -13,7 +13,6 @@ const Page: React.FC<PageComponentProps> = (props) => {
 
   return (
     <>
-      <h1>Test</h1>
       <DynamicComponent {...props} />
     </>
   );

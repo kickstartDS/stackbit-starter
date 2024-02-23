@@ -99,7 +99,6 @@ export type BlogOverviewLayout = BaseContentObject & {
   latest?: BlogTeaser;
   more?: BlogTeaser[];
   // seo?: Seo;
-  sections?: SectionModels[];
 };
 
 export type BlogPostLayout = BaseContentObject & {
@@ -110,7 +109,6 @@ export type BlogPostLayout = BaseContentObject & {
   content?: string;
   cta?: Cta;
   // seo?: ;
-  sections?: SectionModels[];
 };
 
 export type Config = BaseContentObject & {

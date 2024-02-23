@@ -1,286 +1,8 @@
 {
   "components": [
     {
-      "name": "blog_head",
-      "label": "Blog Head",
-      "description": "Intro portion of a singular blog entry",
-      "type": "object",
-      "fields": [
-        {
-          "name": "date",
-          "type": "string",
-          "description": "The date when the blog post was published",
-          "required": false
-        },
-        {
-          "name": "tags",
-          "type": "list",
-          "items": {
-            "type": "string"
-          }
-        },
-        {
-          "name": "headline",
-          "type": "string",
-          "description": "The headline of the blog post",
-          "required": false
-        },
-        {
-          "name": "image",
-          "type": "string",
-          "description": "The source of the cover image for the blog post",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "blog_head",
-          "hidden": true
-        }
-      ]
-    },
-    {
-      "name": "socialSharing",
-      "label": "SocialSharing",
-      "description": "",
-      "type": "object",
-      "fields": [
-        {
-          "name": "icon",
-          "type": "string",
-          "description": "The icon name for the social link",
-          "required": false
-        },
-        {
-          "name": "href",
-          "type": "string",
-          "description": "The href for the social link",
-          "required": false
-        },
-        {
-          "name": "title",
-          "type": "string",
-          "description": "The title for the social link",
-          "required": false
-        }
-      ]
-    },
-    {
-      "name": "blog_aside",
-      "label": "Blog Aside",
-      "description": "Meta info for a singular blog entry",
-      "type": "object",
-      "fields": [
-        {
-          "name": "author",
-          "label": "Author",
-          "description": "The author of the blog post",
-          "type": "object",
-          "fields": [
-            {
-              "name": "name",
-              "type": "string",
-              "description": "The name of the author",
-              "required": false
-            },
-            {
-              "name": "byline",
-              "type": "string",
-              "description": "The byline of the author",
-              "required": false
-            },
-            {
-              "name": "image",
-              "type": "string",
-              "description": "The image URL of the author",
-              "required": false
-            },
-            {
-              "name": "twitter",
-              "type": "string",
-              "description": "The Twitter name of the author",
-              "required": false
-            },
-            {
-              "name": "email",
-              "type": "string",
-              "description": "The Email of the author",
-              "required": false
-            }
-          ]
-        },
-        {
-          "name": "socialSharing",
-          "label": "SocialSharing",
-          "description": "",
-          "type": "list",
-          "items": {
-            "type": "reference",
-            "models": ["socialSharing"]
-          }
-        },
-        {
-          "name": "readingTime",
-          "type": "string",
-          "description": "The reading time for the blog post",
-          "required": false
-        },
-        {
-          "name": "date",
-          "type": "string",
-          "description": "The date when the blog post was published",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "blog_aside",
-          "hidden": true
-        }
-      ]
-    },
-    {
-      "name": "buttons",
-      "label": "Buttons",
-      "description": "Button",
-      "type": "object",
-      "fields": [
-        {
-          "name": "label",
-          "type": "string",
-          "description": "Text content to display inside the button",
-          "required": false
-        },
-        {
-          "name": "icon",
-          "type": "string",
-          "description": "Choose an icon",
-          "required": false
-        },
-        {
-          "name": "target",
-          "type": "string",
-          "description": "Target that should be linked, makes the button behave like a link semantically",
-          "required": false
-        }
-      ]
-    },
-    {
-      "name": "cta",
-      "label": "Cta",
-      "description": "Cta",
-      "type": "object",
-      "fields": [
-        {
-          "name": "headline",
-          "type": "string",
-          "description": "Headline for the Component element",
-          "required": false
-        },
-        {
-          "name": "sub",
-          "type": "string",
-          "description": "Subheadline below the component headline",
-          "required": false
-        },
-        {
-          "name": "text",
-          "type": "string",
-          "description": "Info text for the component element",
-          "required": false
-        },
-        {
-          "name": "highlightText",
-          "type": "string",
-          "description": "Visually highlight the text",
-          "required": false
-        },
-        {
-          "name": "buttons",
-          "label": "Buttons",
-          "description": "Button",
-          "type": "list",
-          "items": {
-            "type": "reference",
-            "models": ["buttons"]
-          }
-        },
-        {
-          "name": "textAlign",
-          "type": "enum",
-          "options": [
-            {
-              "label": "left",
-              "value": "left"
-            },
-            {
-              "label": "center",
-              "value": "center"
-            }
-          ],
-          "default": "left",
-          "description": "Choose the alginment of the text",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "cta",
-          "hidden": true
-        }
-      ]
-    },
-    {
-      "name": "seo",
-      "label": "Seo",
-      "description": "Abstracts SEO settings for a website into JSON schema",
-      "type": "object",
-      "fields": [
-        {
-          "name": "title",
-          "type": "string",
-          "description": "Title used for the page",
-          "required": false
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "description": "Description used for the page",
-          "required": false
-        },
-        {
-          "name": "keywords",
-          "type": "string",
-          "description": "Keywords used for the page",
-          "required": false
-        },
-        {
-          "name": "image",
-          "type": "string",
-          "description": "Preview image used for the page",
-          "required": false
-        },
-        {
-          "name": "cardImage",
-          "type": "string",
-          "description": "Card preview image (larger, e.g. Twitter) used for the page",
-          "required": false
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "seo",
-          "hidden": true
-        }
-      ]
-    },
-    {
       "name": "blog_teaser",
-      "label": "Blog Teaser",
+      "label": "Blog_teaser",
       "description": "Display a blog teaser with date, tags, headline, teaser text and author",
       "type": "object",
       "fields": [
@@ -369,10 +91,289 @@
           ]
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "blog_teaser",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "buttons",
+      "label": "Buttons",
+      "description": "Button",
+      "type": "object",
+      "fields": [
+        {
+          "name": "label",
+          "type": "string",
+          "description": "Text content to display inside the button",
+          "required": false
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "description": "Choose an icon",
+          "required": false
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "description": "Target that should be linked, makes the button behave like a link semantically",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cta",
+      "label": "Cta",
+      "description": "Cta",
+      "type": "object",
+      "fields": [
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "Headline for the Component element",
+          "required": false
+        },
+        {
+          "name": "sub",
+          "type": "string",
+          "description": "Subheadline below the component headline",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "default": "Lorem",
+          "description": "Info text for the component element",
+          "required": false
+        },
+        {
+          "name": "highlightText",
+          "type": "string",
+          "description": "Visually highlight the text",
+          "required": false
+        },
+        {
+          "name": "buttons",
+          "label": "Buttons",
+          "description": "Button",
+          "type": "list",
+          "items": {
+            "type": "model",
+            "models": ["buttons"]
+          }
+        },
+        {
+          "name": "textAlign",
+          "type": "enum",
+          "options": [
+            {
+              "label": "left",
+              "value": "left"
+            },
+            {
+              "label": "center",
+              "value": "center"
+            }
+          ],
+          "default": "left",
+          "description": "Choose the alginment of the text",
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "cta",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "seo",
+      "label": "Seo",
+      "description": "Abstracts SEO settings for a website into JSON schema",
+      "type": "object",
+      "fields": [
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Title used for the page",
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "Description used for the page",
+          "required": false
+        },
+        {
+          "name": "keywords",
+          "type": "string",
+          "description": "Keywords used for the page",
+          "required": false
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Preview image used for the page",
+          "required": false
+        },
+        {
+          "name": "cardImage",
+          "type": "string",
+          "description": "Card preview image (larger, e.g. Twitter) used for the page",
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "seo",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "blog_head",
+      "label": "Blog_head",
+      "description": "Intro portion of a singular blog entry",
+      "type": "object",
+      "fields": [
+        {
+          "name": "date",
+          "type": "string",
+          "description": "The date when the blog post was published",
+          "required": false
+        },
+        {
+          "name": "tags",
+          "type": "list",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "headline",
+          "type": "string",
+          "description": "The headline of the blog post",
+          "required": false
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "description": "The source of the cover image for the blog post",
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "blog_head",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "socialSharing",
+      "label": "SocialSharing",
+      "description": "",
+      "type": "object",
+      "fields": [
+        {
+          "name": "icon",
+          "type": "string",
+          "description": "The icon name for the social link",
+          "required": false
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "description": "The href for the social link",
+          "required": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "The title for the social link",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "blog_aside",
+      "label": "Blog_aside",
+      "description": "Meta info for a singular blog entry",
+      "type": "object",
+      "fields": [
+        {
+          "name": "author",
+          "label": "Author",
+          "description": "The author of the blog post",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "The name of the author",
+              "required": false
+            },
+            {
+              "name": "byline",
+              "type": "string",
+              "description": "The byline of the author",
+              "required": false
+            },
+            {
+              "name": "image",
+              "type": "string",
+              "description": "The image URL of the author",
+              "required": false
+            },
+            {
+              "name": "twitter",
+              "type": "string",
+              "description": "The Twitter name of the author",
+              "required": false
+            },
+            {
+              "name": "email",
+              "type": "string",
+              "description": "The Email of the author",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "socialSharing",
+          "label": "SocialSharing",
+          "description": "",
+          "type": "list",
+          "items": {
+            "type": "model",
+            "models": ["socialSharing"]
+          }
+        },
+        {
+          "name": "readingTime",
+          "type": "string",
+          "description": "The reading time for the blog post",
+          "required": false
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": "The date when the blog post was published",
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "blog_aside",
           "hidden": true
         }
       ]
@@ -409,12 +410,12 @@
           "description": "",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["questions"]
           }
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "faq",
@@ -525,7 +526,7 @@
           ]
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "feature",
@@ -629,12 +630,12 @@
           "description": "Partial Component used to display a feature",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["feature"]
           }
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "features",
@@ -680,7 +681,7 @@
           "description": "",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["images"]
           }
         },
@@ -736,7 +737,7 @@
           "required": false
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "gallery",
@@ -807,7 +808,7 @@
           "required": false
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "image_text",
@@ -834,7 +835,7 @@
           "required": false
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "logo",
@@ -860,7 +861,7 @@
           "description": "Logo entry for Logos component",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["logo"]
           }
         },
@@ -931,7 +932,7 @@
           ]
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "logos",
@@ -964,7 +965,7 @@
           "required": false
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "stat",
@@ -984,12 +985,12 @@
           "description": "Stat entry of Stats component",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["stat"]
           }
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "stats",
@@ -1102,7 +1103,7 @@
           "required": false
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "teaser_card",
@@ -1155,7 +1156,7 @@
           ]
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "testimonial",
@@ -1175,12 +1176,12 @@
           "description": "Testimonial entry of Testimonials component",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["testimonial"]
           }
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "testimonials",
@@ -1241,7 +1242,7 @@
           "required": false
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "text",
@@ -1659,12 +1660,12 @@
           "description": "Component used for user interaction",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["buttons"]
           }
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "section",
@@ -1746,12 +1747,12 @@
           "description": "",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["navItems"]
           }
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "header",
@@ -1809,64 +1810,15 @@
           "description": "",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["navItems"]
           }
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "footer",
-          "hidden": true
-        }
-      ]
-    },
-    {
-      "name": "blog_post",
-      "label": "Blog Post",
-      "description": "Abstracts a blog post concept into JSON schema",
-      "type": "page",
-      "fields": [
-        {
-          "name": "head",
-          "label": "Head",
-          "description": "Intro portion of a singular blog entry",
-          "type": "reference",
-          "models": ["blog_head"]
-        },
-        {
-          "name": "aside",
-          "label": "Aside",
-          "description": "Meta info for a singular blog entry",
-          "type": "reference",
-          "models": ["blog_aside"]
-        },
-        {
-          "name": "content",
-          "type": "string",
-          "description": "Body text for the blog post",
-          "required": false
-        },
-        {
-          "name": "cta",
-          "label": "Cta",
-          "description": "Cta",
-          "type": "reference",
-          "models": ["cta"]
-        },
-        {
-          "name": "seo",
-          "label": "Seo",
-          "description": "Abstracts SEO settings for a website into JSON schema",
-          "type": "reference",
-          "models": ["seo"]
-        },
-        {
-          "name": "Type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default": "blog_post",
           "hidden": true
         }
       ]
@@ -1881,7 +1833,7 @@
           "name": "latest",
           "label": "Latest",
           "description": "Display a blog teaser with date, tags, headline, teaser text and author",
-          "type": "reference",
+          "type": "model",
           "models": ["blog_teaser"]
         },
         {
@@ -1890,7 +1842,7 @@
           "description": "Display a blog teaser with date, tags, headline, teaser text and author",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["blog_teaser"]
           }
         },
@@ -1900,7 +1852,7 @@
           "description": "Display a blog teaser with date, tags, headline, teaser text and author",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["blog_teaser"]
           }
         },
@@ -1908,21 +1860,70 @@
           "name": "cta",
           "label": "Cta",
           "description": "Cta",
-          "type": "reference",
+          "type": "model",
           "models": ["cta"]
         },
         {
           "name": "seo",
           "label": "Seo",
           "description": "Abstracts SEO settings for a website into JSON schema",
-          "type": "reference",
+          "type": "model",
           "models": ["seo"]
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "blog_overview",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "name": "blog_post",
+      "label": "Blog Post",
+      "description": "Abstracts a blog post concept into JSON schema",
+      "type": "page",
+      "fields": [
+        {
+          "name": "head",
+          "label": "Head",
+          "description": "Intro portion of a singular blog entry",
+          "type": "model",
+          "models": ["blog_head"]
+        },
+        {
+          "name": "aside",
+          "label": "Aside",
+          "description": "Meta info for a singular blog entry",
+          "type": "model",
+          "models": ["blog_aside"]
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "Body text for the blog post",
+          "required": false
+        },
+        {
+          "name": "cta",
+          "label": "Cta",
+          "description": "Cta",
+          "type": "model",
+          "models": ["cta"]
+        },
+        {
+          "name": "seo",
+          "label": "Seo",
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "type": "model",
+          "models": ["seo"]
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default": "blog_post",
           "hidden": true
         }
       ]
@@ -1939,7 +1940,7 @@
           "description": "Component used to layout components into pages",
           "type": "list",
           "items": {
-            "type": "reference",
+            "type": "model",
             "models": ["section"]
           }
         },
@@ -1947,11 +1948,11 @@
           "name": "seo",
           "label": "Seo",
           "description": "Abstracts SEO settings for a website into JSON schema",
-          "type": "reference",
+          "type": "model",
           "models": ["seo"]
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "page",
@@ -1969,25 +1970,25 @@
           "name": "header",
           "label": "Header",
           "description": "Header",
-          "type": "reference",
+          "type": "model",
           "models": ["header"]
         },
         {
           "name": "footer",
           "label": "Footer",
           "description": "Footer",
-          "type": "reference",
+          "type": "model",
           "models": ["footer"]
         },
         {
           "name": "seo",
           "label": "Seo",
           "description": "Abstracts SEO settings for a website into JSON schema",
-          "type": "reference",
+          "type": "model",
           "models": ["seo"]
         },
         {
-          "name": "Type",
+          "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default": "settings",
