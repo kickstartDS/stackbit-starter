@@ -1,0 +1,211 @@
+{
+  "model": "gallery",
+  "presets": [
+    {
+      "label": "SmallSquaresWithLightbox",
+      "thumbnail": "images/components-gallery--small-squares-with-lightbox.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "images": [
+          {
+            "src": "/img/close-up-young-business-team-working.png",
+            "alt": "Alt text Image 1",
+            "caption": "Caption Image 1",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/low-angle-tall-building-with-many-windows_23-2148230392.png",
+            "alt": "Alt text Image 2",
+            "caption": "Caption Image 2",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/full-shot-different-people-working-together.png",
+            "alt": "Alt text Image 3",
+            "caption": "Caption Image 3",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/top-view-desk-with-keyboard-drawing-pad.png",
+            "alt": "Alt text Image 4",
+            "caption": "Caption Image 4",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/people-brainstorming-work-meeting.png",
+            "alt": "Alt text Image 5",
+            "caption": "Caption Image 5",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/view-modern-office.jpg",
+            "alt": "Alt text Image 6",
+            "caption": "Caption Image 6",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/colleagues-work-office-using-computers-looking-aside.png",
+            "alt": "Alt text Image 7",
+            "caption": "Caption Image 7",
+            "$$type": "images"
+          }
+        ],
+        "aspectRatio": "square",
+        "lightbox": true,
+        "layout": "smallTiles"
+      }
+    },
+    {
+      "label": "LargeLandscapeTiles",
+      "thumbnail": "images/components-gallery--large-landscape-tiles.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "images": [
+          {
+            "src": "/img/close-up-young-business-team-working.png",
+            "alt": "Alt text Image 1",
+            "caption": "Caption Image 1",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/low-angle-tall-building-with-many-windows_23-2148230392.png",
+            "alt": "Alt text Image 2",
+            "caption": "Caption Image 2",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/full-shot-different-people-working-together.png",
+            "alt": "Alt text Image 3",
+            "caption": "Caption Image 3",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/top-view-desk-with-keyboard-drawing-pad.png",
+            "alt": "Alt text Image 4",
+            "caption": "Caption Image 4",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/people-brainstorming-work-meeting.png",
+            "alt": "Alt text Image 5",
+            "caption": "Caption Image 5",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/view-modern-office.jpg",
+            "alt": "Alt text Image 6",
+            "caption": "Caption Image 6",
+            "$$type": "images"
+          }
+        ],
+        "aspectRatio": "landscape",
+        "lightbox": false,
+        "layout": "largeTiles"
+      }
+    },
+    {
+      "label": "FreeAspectRatio",
+      "thumbnail": "images/components-gallery--free-aspect-ratio.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "images": [
+          {
+            "src": "/img/close-up-young-business-team-working.png",
+            "alt": "Alt text Image 1",
+            "caption": "Caption Image 1",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/low-angle-tall-building-with-many-windows_23-2148230392.png",
+            "alt": "Alt text Image 2",
+            "caption": "Caption Image 2",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/full-shot-different-people-working-together.png",
+            "alt": "Alt text Image 3",
+            "caption": "Caption Image 3",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/top-view-desk-with-keyboard-drawing-pad.png",
+            "alt": "Alt text Image 4",
+            "caption": "Caption Image 4",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/people-brainstorming-work-meeting.png",
+            "alt": "Alt text Image 5",
+            "caption": "Caption Image 5",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/view-modern-office.jpg",
+            "alt": "Alt text Image 6",
+            "caption": "Caption Image 6",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/colleagues-work-office-using-computers-looking-aside.png",
+            "alt": "Alt text Image 7",
+            "caption": "Caption Image 7",
+            "$$type": "images"
+          }
+        ],
+        "aspectRatio": "unset",
+        "lightbox": true,
+        "layout": "smallTiles"
+      }
+    },
+    {
+      "label": "StackLandscape",
+      "thumbnail": "images/components-gallery--stack-landscape.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "images": [
+          {
+            "src": "/img/close-up-young-business-team-working.png",
+            "alt": "Alt text Image 1",
+            "caption": "Caption Image 1",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/top-view-desk-with-keyboard-drawing-pad.png",
+            "alt": "Alt text Image 2",
+            "caption": "Caption Image 2",
+            "$$type": "images"
+          },
+          {
+            "src": "/img/people-brainstorming-work-meeting.png",
+            "alt": "Alt text Image 3",
+            "caption": "Caption Image 3",
+            "$$type": "images"
+          }
+        ],
+        "aspectRatio": "landscape",
+        "lightbox": false,
+        "layout": "stack"
+      }
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "model": "section",
+  "presets": [
+    {
+      "label": "Cards",
+      "thumbnail": "images/layout-section--cards.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "Slider",
+      "thumbnail": "images/layout-section--slider.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Section headline",
+          "large": false,
+          "width": "unset"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "slider",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "Inverted",
+      "thumbnail": "images/layout-section--inverted.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": true,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "Spotlight",
+      "thumbnail": "images/layout-section--spotlight.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": true,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "Stagelights",
+      "thumbnail": "images/layout-section--stagelights.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "stagelights",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "AccentBackground",
+      "thumbnail": "images/layout-section--accent-background.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "accent",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "BoldBackground",
+      "thumbnail": "images/layout-section--bold-background.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "bold",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "ColorfulGradient",
+      "thumbnail": "images/layout-section--colorful-gradient.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "horizontalGradient",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "WithButtons",
+      "thumbnail": "images/layout-section--with-buttons.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "default",
+          "tileWidth": "default"
+        },
+        "buttons": [
+          {
+            "label": "All Showcases",
+            "variant": "secondary",
+            "size": "medium",
+            "disabled": false,
+            "icon": "arrow-right",
+            "$$type": "buttons"
+          },
+          {
+            "label": "Book a meeting",
+            "variant": "secondary",
+            "size": "medium",
+            "disabled": false,
+            "icon": "date",
+            "$$type": "buttons"
+          }
+        ]
+      }
+    },
+    {
+      "label": "TileLayout",
+      "thumbnail": "images/layout-section--tile-layout.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "max",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "tile",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "FlexLayout",
+      "thumbnail": "images/layout-section--flex-layout.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "max",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "default",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    },
+    {
+      "label": "ListLayout",
+      "thumbnail": "images/layout-section--list-layout.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "width": "default",
+        "style": "default",
+        "backgroundColor": "default",
+        "spotlight": false,
+        "spaceBefore": "default",
+        "spaceAfter": "default",
+        "inverted": false,
+        "headerSpacing": false,
+        "headline": {
+          "text": "Happy Customers Showcases",
+          "large": false,
+          "width": "unset",
+          "sub": "We can create something shining for you too!",
+          "align": "center"
+        },
+        "content": {
+          "width": "unset",
+          "align": "center",
+          "gutter": "default",
+          "mode": "list",
+          "tileWidth": "default"
+        },
+        "buttons": []
+      }
+    }
+  ]
+}

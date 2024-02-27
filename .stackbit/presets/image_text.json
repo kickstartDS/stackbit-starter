@@ -1,0 +1,43 @@
+{
+  "model": "image_text",
+  "presets": [
+    {
+      "label": "BesideRightLayout",
+      "thumbnail": "images/components-image-text--beside-right-layout.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
+        "highlightText": false,
+        "image": {
+          "src": "/img/close-up-young-business-team-working.png",
+          "alt": "Agency"
+        },
+        "layout": "beside-right"
+      }
+    },
+    {
+      "label": "AboveLayout",
+      "thumbnail": "images/components-image-text--above-layout.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
+        "highlightText": false,
+        "image": {
+          "src": "/img/close-up-young-business-team-working.png",
+          "alt": "Agency"
+        },
+        "layout": "above"
+      }
+    }
+  ]
+}

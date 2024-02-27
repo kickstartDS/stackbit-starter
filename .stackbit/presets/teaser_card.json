@@ -1,0 +1,75 @@
+{
+  "model": "teaser_card",
+  "presets": [
+    {
+      "label": "ProductTiles",
+      "thumbnail": "images/components-teaser-card--product-tiles.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "stack",
+        "button": {
+          "chevron": false,
+          "hidden": true,
+          "label": "Go to page"
+        },
+        "imageRatio": "wide",
+        "headline": "Castaway",
+        "text": "Transforming Ideas into Code",
+        "image": "/img/logos/castaway.svg",
+        "target": "#"
+      }
+    },
+    {
+      "label": "PageNavigation",
+      "thumbnail": "images/components-teaser-card--page-navigation.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "stack",
+        "button": {
+          "chevron": false,
+          "hidden": false,
+          "label": "Read more"
+        },
+        "imageRatio": "landscape",
+        "headline": "Design System Services",
+        "text": "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+        "image": "/img/02.jpg",
+        "target": "#"
+      }
+    },
+    {
+      "label": "ShowcasePreview",
+      "thumbnail": "images/components-teaser-card--showcase-preview.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "row",
+        "button": {
+          "chevron": false,
+          "hidden": false,
+          "label": "View showcase"
+        },
+        "imageRatio": "wide",
+        "label": "Tech",
+        "headline": "Transformation Love Story",
+        "text": "See how we saved TechFusions a year's worth of development time",
+        "image": "/img/showcases/comp_tfe01.jpg",
+        "target": "#"
+      }
+    }
+  ]
+}

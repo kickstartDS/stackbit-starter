@@ -91,6 +91,11 @@
           ]
         },
         {
+          "name": "className",
+          "type": "string",
+          "required": false
+        },
+        {
           "name": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
@@ -146,7 +151,6 @@
         {
           "name": "text",
           "type": "string",
-          "default": "Lorem",
           "description": "Info text for the component element",
           "required": false
         },
@@ -163,7 +167,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["buttons"]
+            "models": [
+              "buttons"
+            ]
           }
         },
         {
@@ -354,7 +360,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["socialSharing"]
+            "models": [
+              "socialSharing"
+            ]
           }
         },
         {
@@ -367,6 +375,11 @@
           "name": "date",
           "type": "string",
           "description": "The date when the blog post was published",
+          "required": false
+        },
+        {
+          "name": "className",
+          "type": "string",
           "required": false
         },
         {
@@ -411,7 +424,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["questions"]
+            "models": [
+              "questions"
+            ]
           }
         },
         {
@@ -631,7 +646,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["feature"]
+            "models": [
+              "feature"
+            ]
           }
         },
         {
@@ -682,7 +699,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["images"]
+            "models": [
+              "images"
+            ]
           }
         },
         {
@@ -862,7 +881,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["logo"]
+            "models": [
+              "logo"
+            ]
           }
         },
         {
@@ -986,7 +1007,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["stat"]
+            "models": [
+              "stat"
+            ]
           }
         },
         {
@@ -1177,7 +1200,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["testimonial"]
+            "models": [
+              "testimonial"
+            ]
           }
         },
         {
@@ -1661,7 +1686,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["buttons"]
+            "models": [
+              "buttons"
+            ]
           }
         },
         {
@@ -1686,6 +1713,11 @@
         },
         {
           "name": "label",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "active",
           "type": "string",
           "required": false
         }
@@ -1748,7 +1780,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["navItems"]
+            "models": [
+              "navItems"
+            ]
           }
         },
         {
@@ -1811,7 +1845,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["navItems"]
+            "models": [
+              "navItems"
+            ]
           }
         },
         {
@@ -1834,7 +1870,9 @@
           "label": "Latest",
           "description": "Display a blog teaser with date, tags, headline, teaser text and author",
           "type": "model",
-          "models": ["blog_teaser"]
+          "models": [
+            "blog_teaser"
+          ]
         },
         {
           "name": "list",
@@ -1843,7 +1881,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["blog_teaser"]
+            "models": [
+              "blog_teaser"
+            ]
           }
         },
         {
@@ -1853,7 +1893,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["blog_teaser"]
+            "models": [
+              "blog_teaser"
+            ]
           }
         },
         {
@@ -1861,14 +1903,18 @@
           "label": "Cta",
           "description": "Cta",
           "type": "model",
-          "models": ["cta"]
+          "models": [
+            "cta"
+          ]
         },
         {
           "name": "seo",
           "label": "Seo",
           "description": "Abstracts SEO settings for a website into JSON schema",
           "type": "model",
-          "models": ["seo"]
+          "models": [
+            "seo"
+          ]
         },
         {
           "name": "type",
@@ -1890,14 +1936,18 @@
           "label": "Head",
           "description": "Intro portion of a singular blog entry",
           "type": "model",
-          "models": ["blog_head"]
+          "models": [
+            "blog_head"
+          ]
         },
         {
           "name": "aside",
           "label": "Aside",
           "description": "Meta info for a singular blog entry",
           "type": "model",
-          "models": ["blog_aside"]
+          "models": [
+            "blog_aside"
+          ]
         },
         {
           "name": "content",
@@ -1910,14 +1960,18 @@
           "label": "Cta",
           "description": "Cta",
           "type": "model",
-          "models": ["cta"]
+          "models": [
+            "cta"
+          ]
         },
         {
           "name": "seo",
           "label": "Seo",
           "description": "Abstracts SEO settings for a website into JSON schema",
           "type": "model",
-          "models": ["seo"]
+          "models": [
+            "seo"
+          ]
         },
         {
           "name": "type",
@@ -1941,7 +1995,9 @@
           "type": "list",
           "items": {
             "type": "model",
-            "models": ["section"]
+            "models": [
+              "section"
+            ]
           }
         },
         {
@@ -1949,7 +2005,9 @@
           "label": "Seo",
           "description": "Abstracts SEO settings for a website into JSON schema",
           "type": "model",
-          "models": ["seo"]
+          "models": [
+            "seo"
+          ]
         },
         {
           "name": "type",
@@ -1971,21 +2029,27 @@
           "label": "Header",
           "description": "Header",
           "type": "model",
-          "models": ["header"]
+          "models": [
+            "header"
+          ]
         },
         {
           "name": "footer",
           "label": "Footer",
           "description": "Footer",
           "type": "model",
-          "models": ["footer"]
+          "models": [
+            "footer"
+          ]
         },
         {
           "name": "seo",
           "label": "Seo",
           "description": "Abstracts SEO settings for a website into JSON schema",
           "type": "model",
-          "models": ["seo"]
+          "models": [
+            "seo"
+          ]
         },
         {
           "name": "type",

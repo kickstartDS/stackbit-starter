@@ -1,0 +1,69 @@
+{
+  "model": "text",
+  "presets": [
+    {
+      "label": "SingleColumn",
+      "thumbnail": "images/components-text--single-column.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
+        "layout": "singleColumn",
+        "align": "left",
+        "highlightText": false
+      }
+    },
+    {
+      "label": "Centered",
+      "thumbnail": "images/components-text--centered.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
+        "layout": "singleColumn",
+        "align": "center",
+        "highlightText": false
+      }
+    },
+    {
+      "label": "MultiColumn",
+      "thumbnail": "images/components-text--multi-column.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n_Experience the power of streamlined development and see the difference it can make in your projects._",
+        "layout": "multiColumn",
+        "align": "left",
+        "highlightText": false
+      }
+    },
+    {
+      "label": "Highlight",
+      "thumbnail": "images/components-text--highlight.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
+        "layout": "singleColumn",
+        "align": "left",
+        "highlightText": true
+      }
+    }
+  ]
+}

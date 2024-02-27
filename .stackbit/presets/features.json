@@ -1,0 +1,456 @@
+{
+  "model": "features",
+  "presets": [
+    {
+      "label": "IconCentered",
+      "thumbnail": "images/components-features--icon-centered.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "largeTiles",
+        "style": "centered",
+        "ctas": {
+          "toggle": true,
+          "style": "link"
+        },
+        "feature": [
+          {
+            "icon": "home",
+            "title": "Scalable Architecture",
+            "text": "Our design system allows for a scalable architecture, enabling you to build applications that can grow with your needs.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature1",
+              "label": "Learn more",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "map",
+            "title": "Efficient Development",
+            "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature2",
+              "label": "Get started",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "person",
+            "title": "Consistent UI",
+            "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature3",
+              "label": "Explore",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "star",
+            "title": "Customizable Design",
+            "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature4",
+              "label": "Customize",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "upload",
+            "title": "Cloud Ready",
+            "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature5",
+              "label": "Deploy",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "login",
+            "title": "Secure",
+            "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature6",
+              "label": "Secure",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          }
+        ]
+      }
+    },
+    {
+      "label": "StackWithButton",
+      "thumbnail": "images/components-features--stack-with-button.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "smallTiles",
+        "style": "stack",
+        "ctas": {
+          "toggle": true,
+          "style": "button"
+        },
+        "feature": [
+          {
+            "icon": "person",
+            "title": "Consistent UI",
+            "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature3",
+              "label": "Explore",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "star",
+            "title": "Customizable Design",
+            "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature4",
+              "label": "Customize",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "upload",
+            "title": "Cloud Ready",
+            "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature5",
+              "label": "Deploy",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "login",
+            "title": "Secure",
+            "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature6",
+              "label": "Secure",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ListView",
+      "thumbnail": "images/components-features--list-view.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "list",
+        "style": "besideLarge",
+        "ctas": {
+          "toggle": false,
+          "style": "intext"
+        },
+        "feature": [
+          {
+            "icon": "star",
+            "title": "Customizable Design",
+            "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature4",
+              "label": "Customize",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "map",
+            "title": "Efficient Development",
+            "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature2",
+              "label": "Get started",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "person",
+            "title": "Consistent UI",
+            "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature3",
+              "label": "Explore",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "home",
+            "title": "Scalable Architecture",
+            "text": "Our design system allows for a scalable architecture, enabling you to build applications that can grow with your needs.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature1",
+              "label": "Learn more",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "upload",
+            "title": "Cloud Ready",
+            "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature5",
+              "label": "Deploy",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "login",
+            "title": "Secure",
+            "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature6",
+              "label": "Secure",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          }
+        ]
+      }
+    },
+    {
+      "label": "IconBesideWithLinkInText",
+      "thumbnail": "images/components-features--icon-beside-with-link-in-text.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "smallTiles",
+        "style": "intext",
+        "ctas": {
+          "toggle": true,
+          "style": "intext"
+        },
+        "feature": [
+          {
+            "icon": "home",
+            "title": "Scalable Architecture",
+            "text": "Our design system allows for a scalable architecture, enabling you to build applications that can grow with your needs.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature1",
+              "label": "Learn more",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "map",
+            "title": "Efficient Development",
+            "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature2",
+              "label": "Get started",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "person",
+            "title": "Consistent UI",
+            "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature3",
+              "label": "Explore",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "star",
+            "title": "Customizable Design",
+            "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature4",
+              "label": "Customize",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "upload",
+            "title": "Cloud Ready",
+            "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature5",
+              "label": "Deploy",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "login",
+            "title": "Secure",
+            "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature6",
+              "label": "Secure",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          }
+        ]
+      }
+    },
+    {
+      "label": "IconIntextWithLink",
+      "thumbnail": "images/components-features--icon-intext-with-link.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "layout": "largeTiles",
+        "style": "intext",
+        "ctas": {
+          "toggle": true,
+          "style": "link"
+        },
+        "feature": [
+          {
+            "icon": "star",
+            "title": "Customizable Design",
+            "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature4",
+              "label": "Customize",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "map",
+            "title": "Efficient Development",
+            "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature2",
+              "label": "Get started",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "person",
+            "title": "Consistent UI",
+            "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature3",
+              "label": "Explore",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "upload",
+            "title": "Cloud Ready",
+            "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature5",
+              "label": "Deploy",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          },
+          {
+            "icon": "login",
+            "title": "Secure",
+            "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
+            "style": "stack",
+            "cta": {
+              "target": "/feature6",
+              "label": "Secure",
+              "toggle": true,
+              "style": "link"
+            },
+            "$$type": "feature"
+          }
+        ]
+      }
+    }
+  ]
+}

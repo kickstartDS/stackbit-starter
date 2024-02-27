@@ -10,13 +10,14 @@
     "ssl-proxy": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
     "converter": "esbuild helpers/createStoryblokConfig.ts --outfile=helpers/createStoryblokConfig.js --bundle --platform=node --target=node16 && node helpers/createStoryblokConfig.js",
     "postinstall": "cp -r node_modules/@kickstartds/ds-agency/dist/static/* public/",
-    "create-stackbit-config": "kickstartDS cms stackbit --components-path node_modules/@kickstartds/ds-agency/dist/components --configuration-path cms --update-config false"
+    "create-stackbit-config": "kickstartDS cms stackbit --components-path node_modules/@kickstartds/ds-agency/dist/components --configuration-path cms --update-config false",
+    "create-stackbit-presets": "rm -rf .stackbit/presets/images && cp -r node_modules/@kickstartds/ds-agency/dist/static/img/screenshots .stackbit/presets/images && node scripts/generatePresets.js"
   },
   "dependencies": {
     "@kickstartds/base": "2.3.0-beta.1",
     "@kickstartds/blog": "2.3.0-beta.1",
     "@kickstartds/core": "3.0.0-beta.0",
-    "@kickstartds/ds-agency": "^3.4.5",
+    "@kickstartds/ds-agency": "^3.6.4",
     "@kickstartds/form": "2.3.0-beta.1",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",

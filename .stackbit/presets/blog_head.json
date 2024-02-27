@@ -1,0 +1,24 @@
+{
+  "model": "blog_head",
+  "presets": [
+    {
+      "label": "Default",
+      "thumbnail": "images/blog-blog-head--default.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "date": "12/30/2022",
+        "tags": [
+          "Technology",
+          "AI"
+        ],
+        "headline": "The Future of AI",
+        "image": "/img/close-up-young-business-team-working.png"
+      }
+    }
+  ]
+}

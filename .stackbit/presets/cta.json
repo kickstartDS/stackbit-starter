@@ -1,0 +1,86 @@
+{
+  "model": "cta",
+  "presets": [
+    {
+      "label": "Banner",
+      "thumbnail": "images/components-cta--banner.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "headline": "Ready to Transform Your Development Process?",
+        "sub": "Start your journey today.",
+        "highlightText": false,
+        "buttons": [
+          {
+            "label": "Contact Us",
+            "target": "#",
+            "icon": "person",
+            "$$type": "buttons"
+          },
+          {
+            "label": "Learn More",
+            "target": "#",
+            "icon": "date",
+            "$$type": "buttons"
+          }
+        ],
+        "textAlign": "center",
+        "text": "Get started with our design system today and experience a new level of efficiency and consistency in your projects."
+      }
+    },
+    {
+      "label": "Highlighted",
+      "thumbnail": "images/components-cta--highlighted.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "headline": "Why Choose Our Design System?",
+        "sub": "Built for consistency and speed.",
+        "highlightText": true,
+        "buttons": [
+          {
+            "label": "Get Started",
+            "target": "#",
+            "icon": "person",
+            "$$type": "buttons"
+          }
+        ],
+        "textAlign": "center",
+        "text": "Our design system is built with scalability and efficiency in mind. It allows for consistent UI across different platforms, making your development process smoother and faster."
+      }
+    },
+    {
+      "label": "LeftAligned",
+      "thumbnail": "images/components-cta--left-aligned.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "headline": "Experience Our Design System",
+        "sub": "Efficient, scalable, seamless.",
+        "highlightText": false,
+        "buttons": [
+          {
+            "label": "Learn More",
+            "target": "#",
+            "icon": "person",
+            "$$type": "buttons"
+          }
+        ],
+        "textAlign": "left",
+        "text": "Our design system offers a seamless and efficient way to build scalable applications. Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "model": "blog_aside",
+  "presets": [
+    {
+      "label": "Default",
+      "thumbnail": "images/blog-blog-aside--default.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "author": {
+          "name": "Jane Smith",
+          "byline": "CEO at Company",
+          "image": "/img/people/author-emily.png",
+          "twitter": "jane_smith",
+          "email": "jane.smith@example.com"
+        },
+        "socialSharing": [
+          {
+            "icon": "twitter",
+            "href": "https://twitter.com/share?text=The%20Future%20of%20AI&url=https://example.com/blog/the-future-of-ai",
+            "title": "Share on Twitter",
+            "$$type": "socialSharing"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/blog/the-future-of-ai&title=The%20Future%20of%20AI&summary=The%20Future%20of%20AI&source=LinkedIn",
+            "title": "Share on LinkedIn",
+            "$$type": "socialSharing"
+          }
+        ],
+        "readingTime": "5 min read",
+        "date": "12/30/2022"
+      }
+    }
+  ]
+}

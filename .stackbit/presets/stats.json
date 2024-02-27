@@ -1,0 +1,60 @@
+{
+  "model": "stats",
+  "presets": [
+    {
+      "label": "WithDescription",
+      "thumbnail": "images/components-stats--with-description.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "stat": [
+          {
+            "number": 1500,
+            "title": "Users",
+            "description": "Experience the power of our platform, embraced by a vast community of users. Our user base is diverse and dynamic, including both active and inactive members. Join us and become part of this ever-growing community.",
+            "$$type": "stat"
+          },
+          {
+            "number": 350,
+            "title": "Subscribers",
+            "description": "Stay ahead with our regular updates and newsletters. Our subscribers are always in the loop, receiving the latest news and features. Subscribe now and never miss an update from us.",
+            "$$type": "stat"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Simple",
+      "thumbnail": "images/components-stats--simple.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "stat": [
+          {
+            "number": 1500,
+            "title": "Users",
+            "$$type": "stat"
+          },
+          {
+            "number": 350,
+            "title": "Subscribers",
+            "$$type": "stat"
+          },
+          {
+            "number": 125,
+            "title": "Components",
+            "$$type": "stat"
+          }
+        ]
+      }
+    }
+  ]
+}

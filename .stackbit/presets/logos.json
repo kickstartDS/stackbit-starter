@@ -1,0 +1,111 @@
+{
+  "model": "logos",
+  "presets": [
+    {
+      "label": "CenteredWithButton",
+      "thumbnail": "images/components-logos--centered-with-button.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "tagline": "Your Success, Our Commitment",
+        "logo": [
+          {
+            "src": "/img/logos/logoipsum-212.svg",
+            "alt": "Logo 1",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-217.svg",
+            "alt": "Logo 2",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-239.svg",
+            "alt": "Logo 3",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-244.svg",
+            "alt": "Logo 4",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-250.svg",
+            "alt": "Logo 5",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-286.svg",
+            "alt": "Logo 6",
+            "$$type": "logo"
+          }
+        ],
+        "align": "center",
+        "cta": {
+          "toggle": true,
+          "text": "Explore the success stories of our valued customers and discover more about their journey.",
+          "link": "#",
+          "label": "See all our partners",
+          "style": "button"
+        }
+      }
+    },
+    {
+      "label": "LeftAlignedWithTextLink",
+      "thumbnail": "images/components-logos--left-aligned-with-text-link.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "tagline": "Your Success, Our Commitment",
+        "logo": [
+          {
+            "src": "/img/logos/logoipsum-212.svg",
+            "alt": "Logo 1",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-217.svg",
+            "alt": "Logo 2",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-239.svg",
+            "alt": "Logo 3",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-244.svg",
+            "alt": "Logo 4",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-250.svg",
+            "alt": "Logo 5",
+            "$$type": "logo"
+          },
+          {
+            "src": "/img/logos/logoipsum-286.svg",
+            "alt": "Logo 6",
+            "$$type": "logo"
+          }
+        ],
+        "align": "left",
+        "cta": {
+          "toggle": true,
+          "text": "Explore the success stories of our valued customers and discover more about their journey.",
+          "link": "#",
+          "label": "See all our partners",
+          "style": "text"
+        }
+      }
+    }
+  ]
+}

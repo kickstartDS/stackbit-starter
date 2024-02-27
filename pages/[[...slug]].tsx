@@ -9,13 +9,7 @@ interface IParams extends ParsedUrlQuery {
 }
 
 const Page: React.FC<PageComponentProps> = (props) => {
-  console.log("Page props", props);
-
-  return (
-    <>
-      <DynamicComponent {...props} />
-    </>
-  );
+  return <>{props ? <DynamicComponent {...props} /> : <h1>Loading</h1>}</>;
 };
 
 export function getStaticPaths() {

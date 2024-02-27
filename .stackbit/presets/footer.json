@@ -1,0 +1,43 @@
+{
+  "model": "footer",
+  "presets": [
+    {
+      "label": "Footer",
+      "thumbnail": "images/layout-footer--footer.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "logo": {
+          "src": "/logo.svg",
+          "alt": "Systemics Logo",
+          "width": 176,
+          "height": 40,
+          "lazy": false
+        },
+        "logoHref": "/",
+        "navItems": [
+          {
+            "href": "#privacy-policy",
+            "label": "Privacy policy",
+            "$$type": "navItems"
+          },
+          {
+            "href": "#changelog",
+            "label": "Changelog",
+            "$$type": "navItems"
+          },
+          {
+            "href": "https://main--64f08cbba622af835d382b4f.chromatic.com/",
+            "label": "Storybook",
+            "target": "_blank",
+            "$$type": "navItems"
+          }
+        ]
+      }
+    }
+  ]
+}

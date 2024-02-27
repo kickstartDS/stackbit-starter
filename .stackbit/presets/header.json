@@ -1,0 +1,54 @@
+{
+  "model": "header",
+  "presets": [
+    {
+      "label": "Header",
+      "thumbnail": "images/layout-header--header.png",
+      "metadata": {
+        "categories": [
+          "Content"
+        ],
+        "canDelete": false
+      },
+      "data": {
+        "logo": {
+          "src": "/logo.svg",
+          "alt": "Systemics Logo",
+          "width": 176,
+          "height": 40,
+          "lazy": false
+        },
+        "logoHref": "/",
+        "floating": false,
+        "navItems": [
+          {
+            "href": "#",
+            "label": "Nav Item",
+            "$$type": "navItems"
+          },
+          {
+            "href": "#",
+            "label": "Active Item",
+            "active": true,
+            "$$type": "navItems"
+          },
+          {
+            "href": "#",
+            "label": "Another Item",
+            "$$type": "navItems"
+          },
+          {
+            "href": "#",
+            "label": "One more Item",
+            "$$type": "navItems"
+          },
+          {
+            "href": "#",
+            "label": "Last Item",
+            "$$type": "navItems"
+          }
+        ]
+      }
+    }
+  ]
+}
