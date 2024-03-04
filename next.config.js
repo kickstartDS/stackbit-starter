@@ -5,6 +5,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   reactStrictMode: true,
+  output: "export",
   swcMinify: true,
   transpilePackages: [
     "@kickstartds/base",
